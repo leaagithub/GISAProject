@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".MeasurementScreen" />
-        <activity android:name=".ObservationScreen"></activity>
+        <activity android:name=".ObservationScreen" />
+        <activity android:name=".RecommendedAction"></activity>
     </application>
 
 </manifest>
