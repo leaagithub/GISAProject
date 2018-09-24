@@ -17,13 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".SiteInformationActivity" />
-        <activity android:name=".MeasurementScreen" />
-        <activity android:name=".ObservationScreen" />
+        <activity android:name=".MeasurementScreenActivity" />
+        <activity android:name=".ObservationScreenActivity" />
         <activity android:name=".RecommendedAction" />
         <activity android:name=".IncidentOptionsActivity" />
         <activity android:name=".IncidentTypeAndDistributionActivity" />
         <activity android:name=".SignUpActivity" />
-
+        <activity android:name=".SketchActivity"></activity>
     </application>
 
 </manifest>

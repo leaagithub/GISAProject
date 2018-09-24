@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ObservationScreenActivity">
+    tools:context=".SketchActivity">
 
 
     <LinearLayout
@@ -22,7 +22,7 @@
 
 
             <Button
-                android:id="@+id/buttonSaveAndExitObservation"
+                android:id="@+id/buttonSaveAndExitSketch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Observation and Notes"
+                android:text="Sketch"
                 android:paddingLeft="20dp"/>
 
         </LinearLayout>
@@ -52,33 +52,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:orientation="vertical"
-            android:weightSum="2"
-            android:gravity="left
-">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Upload Image" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Take Picture" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
             android:weightSum="3"
             android:orientation="horizontal"
             android:gravity="bottom">
 
             <Button
-                android:id="@+id/buttonPreviousObservation"
+                android:id="@+id/buttonPreviousSketch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -92,7 +71,7 @@
 
 
             <Button
-                android:id="@+id/buttonNextObservation"
+                android:id="@+id/buttonNextSketch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
