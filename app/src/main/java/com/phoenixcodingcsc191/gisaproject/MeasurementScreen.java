@@ -10,4 +10,5 @@ public class MeasurementScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_measurement_screen);
     }
+    @Override public void onBackPressed(){}
 }

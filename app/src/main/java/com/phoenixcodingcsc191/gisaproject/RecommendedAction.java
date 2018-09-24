@@ -10,4 +10,5 @@ public class RecommendedAction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommended_action);
     }
+    @Override public void onBackPressed(){}
 }

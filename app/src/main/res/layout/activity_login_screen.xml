@@ -21,8 +21,10 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="2"/>
+            <!--
             app:srcCompat="@drawable/caltranslogo" />
+            -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,14 +63,14 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/buttonLogIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:text="Login" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonSignUp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"

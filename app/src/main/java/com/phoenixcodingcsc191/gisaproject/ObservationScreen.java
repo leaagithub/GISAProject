@@ -10,4 +10,5 @@ public class ObservationScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_observation_screen);
     }
+    @Override public void onBackPressed(){}
 }
