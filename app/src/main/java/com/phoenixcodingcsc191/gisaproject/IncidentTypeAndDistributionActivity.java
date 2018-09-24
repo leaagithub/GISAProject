@@ -17,7 +17,7 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
     @Override public void onBackPressed(){}
 
     private void saveAndExitButtonActivity(){
-        Button saveAndExitButton = (Button) findViewById(R.id.buttonSaveAndExitSiteInformationPage);
+        Button saveAndExitButton = (Button) findViewById(R.id.buttonSaveIncidentType);
         saveAndExitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

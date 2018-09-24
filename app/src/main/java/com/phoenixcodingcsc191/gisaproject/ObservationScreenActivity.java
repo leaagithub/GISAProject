@@ -12,15 +12,16 @@ public class ObservationScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_observation_screen);
-        previousButtonActivity();
+        previousButton();
         nextButtonActivity();
         saveAndExitActivity();
     }
+
     @Override public void onBackPressed(){}
 
-    private void previousButtonActivity(){
-        Button previousButton = (Button) findViewById(R.id.buttonPreviousSketch);
-        previousButton.setOnClickListener(new View.OnClickListener(){
+    private void previousButton(){
+        Button previous = (Button) findViewById(R.id.buttonPreviousObservation);
+        previous.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 startActivity(new Intent(ObservationScreenActivity.this, SketchActivity.class));

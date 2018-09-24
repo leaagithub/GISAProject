@@ -22,7 +22,7 @@ public class SiteInformationActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(SiteInformationActivity.this, MeasurementScreenActivity.class));
+                startActivity(new Intent(SiteInformationActivity.this, IncidentTypeAndDistributionActivity.class));
                 finish();
             }
         });
