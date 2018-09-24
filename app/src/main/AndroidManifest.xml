@@ -9,17 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".MeasurementScreen" />
-        <activity android:name=".ObservationScreen" />
-        <activity android:name=".RecommendedAction"></activity>
+        <activity android:name=".SiteInformationActivity" />
+        <activity android:name=".MeasurementScreenActivity" />
+        <activity android:name=".ObservationScreenActivity" />
+        <activity android:name=".RecommendedAction" />
+        <activity android:name=".IncidentOptionsActivity" />
+        <activity android:name=".IncidentTypeAndDistributionActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SketchActivity"></activity>
     </application>
 
 </manifest>
