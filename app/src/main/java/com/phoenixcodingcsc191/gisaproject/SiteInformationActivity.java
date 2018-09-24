@@ -21,6 +21,7 @@ public class SiteInformationActivity extends AppCompatActivity {
         Button nextButton = (Button) findViewById(R.id.buttonNextSiteInformationPage);
         nextButton.setOnClickListener(new View.OnClickListener(){
             @Override
+            
             public void onClick(View view){
                 startActivity(new Intent(SiteInformationActivity.this, IncidentTypeAndDistributionActivity.class));
                 finish();
