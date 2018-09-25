@@ -1,7 +1,0 @@
-this was a commit to master
-changes agains
-
-editting to get behind
-In other words: 
-Master(Remote) is ahead 1 commit
-maste r(local) is behind 1 
