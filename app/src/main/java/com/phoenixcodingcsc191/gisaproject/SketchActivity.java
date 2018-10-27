@@ -5,8 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.byox.drawview.enums.DrawingCapture;
+import com.byox.drawview.views.DrawView;
+//import com.byox.drawviewproject.dialogs.SaveBitmapDialog;
 
 public class SketchActivity extends AppCompatActivity {
+
+    private DrawView mDrawView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +21,36 @@ public class SketchActivity extends AppCompatActivity {
         nextPageButton();
         previousButtonActivity();
         saveAndExitButtonActivity();
+        undoDrawButton();
+        redoDrawButton();
+        clearButton();
+        saveSketch();
+
+        mDrawView = (DrawView) findViewById(R.id.draw_view);
+
+        mDrawView.setOnDrawViewListener(new DrawView.OnDrawViewListener() {
+            @Override
+            public void onStartDrawing() {
+                // Your stuff here
+            }
+            @Override
+            public void onEndDrawing() {
+                // Your stuff here
+            }
+            @Override
+            public void onClearDrawing() {
+                // Your stuff here
+            }
+            @Override
+            public void onRequestText() {
+                // Your stuff here
+            }
+            @Override
+            public void onAllMovesPainted() {
+                // Your stuff here
+            }
+        });
+
 
     }
     @Override public void onBackPressed(){}
@@ -30,6 +66,35 @@ public class SketchActivity extends AppCompatActivity {
         });
     }
 
+    private void undoDrawButton(){
+        Button undoButton = (Button) findViewById(R.id.buttonUndoSketch);
+        undoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if (mDrawView.canUndo())
+                    mDrawView.undo();
+            }
+        });
+    }
+    private void redoDrawButton(){
+        Button redoButton = (Button) findViewById(R.id.buttonRedoSketch);
+        redoButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if (mDrawView.canRedo())
+                    mDrawView.redo();
+            }
+        });
+    }
+    private void clearButton(){
+        Button clearButton = (Button) findViewById(R.id.buttonClearSketch);
+        clearButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                mDrawView.restartDrawing();
+            }
+        });
+    }
     private void previousButtonActivity(){
         Button previousButton = (Button) findViewById(R.id.buttonPreviousSketch);
         previousButton.setOnClickListener(new View.OnClickListener(){
@@ -37,6 +102,16 @@ public class SketchActivity extends AppCompatActivity {
             public void onClick(View view){
                 startActivity(new Intent(SketchActivity.this, MeasurementScreenActivity.class));
                 finish();
+            }
+        });
+    }
+
+    private void saveSketch(){
+        Button saveButton = (Button) findViewById(R.id.buttonSaveSketch);
+        saveButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
             }
         });
     }
