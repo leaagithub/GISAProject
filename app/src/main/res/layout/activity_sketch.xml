@@ -42,7 +42,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5"
+            android:layout_weight="6"
             android:layout_margin="20dp"
             android:background="#A9A9A9"
             >
@@ -68,10 +68,38 @@
                 app:dv_draw_zoomregion_scale="4" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonUndoSketch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Undo" />
+            <Button
+                android:id="@+id/buttonRedoSketch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Redo" />
+            <Button
+                android:id="@+id/buttonClearSketch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Clear" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:weightSum="3"
             android:orientation="horizontal"
             android:gravity="bottom">
@@ -83,12 +111,12 @@
                 android:layout_weight="1"
                 android:text="Previous" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/buttonSaveSketch"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="" />
-
+                android:text="Save" />
 
             <Button
                 android:id="@+id/buttonNextSketch"
