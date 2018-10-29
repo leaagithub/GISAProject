@@ -658,16 +658,11 @@
                                 android:id="@+id/textView46"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Perform Detailed Design & Produce Plans" />
+                                android:text="Perform Detailed Design and Produce Plans" />
                         </LinearLayout>
-
-
                     </LinearLayout>
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
-
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>
