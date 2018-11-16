@@ -8,15 +8,40 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.phoenixcodingcsc191.gisaproject.Retrofit.INODEJS;
+import com.phoenixcodingcsc191.gisaproject.Retrofit.RetrofitClient;
+
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
+import retrofit2.Retrofit;
+
 public class SignUpActivity extends AppCompatActivity {
 
+    INODEJS myAPI;
+    CompositeDisposable compositeDisposable = new CompositeDisposable();
     private TextInputLayout textInputFirstName;
     private TextInputLayout textInputLastName;
     private TextInputLayout textInputPassword;
     private TextInputLayout textInputPhoneNo;
     private TextInputLayout textEmployeeID;
+    private TextInputLayout textEmail;
+    private Button signupButton;
 
 
+    @Override
+    protected void onStop(){
+        compositeDisposable.clear();
+        super.onStop();
+    }
+    @Override
+    protected void onDestroy(){
+        compositeDisposable.clear();
+        super.onDestroy();
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,8 +52,39 @@ public class SignUpActivity extends AppCompatActivity {
         textInputPassword = findViewById(R.id.textInputPasswordSignUp);
         textInputPhoneNo = findViewById(R.id.textInputPhoneNoSignUp);
         textEmployeeID = findViewById(R.id.textInputEmployeeIDSignUp);
+        textEmail = findViewById(R.id.textInputEmailAddress);
+
+        //Init API
+        Retrofit retrofit = RetrofitClient.getInstance();
+        myAPI = retrofit.create(INODEJS.class);
+
+        signupButton = findViewById(R.id.buttonSignUpPage);
+
+        signupButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                registerUser(textEmployeeID.getEditText().toString(),
+                        textInputFirstName.getEditText().toString(),
+                        textInputLastName.getEditText().toString(),
+                        textInputPhoneNo.getEditText().toString(),
+                        textInputPassword.getEditText().toString(),
+                        textEmail.getEditText().toString());
+            }
+        });
 
         //signUpButonActivity();
+    }
+    private void registerUser(String eid, String fname, String lname, String phoneNo, String password, String email){
+        compositeDisposable.add(myAPI.registerUser(eid, fname, lname, phoneNo, password, email)
+        .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(new Consumer<String>() {
+                @Override
+                public void accept(String s) throws Exception {
+
+                }
+            })
+        );
     }
     @Override public void onBackPressed(){}
     private void signUpButonActivity(){
