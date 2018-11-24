@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity {
         textInputPassword = findViewById(R.id.textInputPasswordSignUp);
         textInputPhoneNo = findViewById(R.id.textInputPhoneNoSignUp);
         textEmployeeID = findViewById(R.id.textInputEmployeeIDSignUp);
-        textEmail = findViewById(R.id.textInputEmailAddress);
+        textEmail = findViewById(R.id.textInputEmailSignUp);
 
         //Init API
         Retrofit retrofit = RetrofitClient.getInstance();
@@ -63,12 +63,12 @@ public class SignUpActivity extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                registerUser(textEmployeeID.getEditText().toString(),
-                        textInputFirstName.getEditText().toString(),
-                        textInputLastName.getEditText().toString(),
-                        textInputPhoneNo.getEditText().toString(),
-                        textInputPassword.getEditText().toString(),
-                        textEmail.getEditText().toString());
+                registerUser(textEmployeeID.getEditText().getText().toString(),
+                        textInputFirstName.getEditText().getText().toString(),
+                        textInputLastName.getEditText().getText().toString(),
+                        textInputPhoneNo.getEditText().getText().toString(),
+                        textInputPassword.getEditText().getText().toString(),
+                        textEmail.getEditText().getText().toString());
             }
         });
 

@@ -50,6 +50,7 @@ app.post('/register/',(req,res)=>{
 		});
 		if(result && result.length){
 			res.json('User already exists!!!');
+            console.log('User already exists!!!');
 		}
 		else
 		{
@@ -61,6 +62,7 @@ app.post('/register/',(req,res)=>{
 				res.json('Register error: ',err);
 			});
 			res.json('Register successful!!');
+            console.log('Register Successful!!');
 		})
 		}
 	});
@@ -82,9 +84,15 @@ app.post('/login',(req,res,next)=>{
 			}
 			else
 				res.end(JSON.stringify('WRONG PASSWORD'));
+                console.log('Wrong password');
 		}
 		else{
 			res.json('USER NOT EXISTS!!!!!!');
+            console.log('User not exists');
 		}
 	});
 })
+
+app.get('/test',function(req,res){
+    res.send('Hello This is a Test');
+});
