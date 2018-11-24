@@ -12,11 +12,15 @@
         android:orientation="vertical"
         android:weightSum="3">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="vertical"
-            android:layout_weight="2"
             android:padding="20dp"
             android:layout_margin="20dp"
             >
@@ -84,8 +88,21 @@
                     android:hint="Password"
                     android:inputType="textPassword"/>
             </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputEmailSignUp"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
+        </ScrollView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -101,7 +118,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Sign Up"
-                android:onClick="confirmInput"
                 />
         </LinearLayout>
     </LinearLayout>

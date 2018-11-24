@@ -4,6 +4,7 @@
 
     <!-- if you need to find a path or read storage state -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!-- if you need to save a draw as an image -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -13,7 +14,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:testOnly="false"
+        >
         <activity android:name=".LoginScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

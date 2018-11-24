@@ -17,6 +17,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io"}
+        maven { url "https://dl.bintray.com/drummer-aidan/maven/"}
+        //byox drawview
+        maven { url "https://raw.githubusercontent.com/ByoxCode/DrawView/snapshot/aar/snapshots/"}
     }
 }
 
