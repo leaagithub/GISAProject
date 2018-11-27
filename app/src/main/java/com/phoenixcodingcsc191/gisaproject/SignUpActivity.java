@@ -40,7 +40,6 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onDestroy(){
         compositeDisposable.clear();
         super.onDestroy();
-
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +59,10 @@ public class SignUpActivity extends AppCompatActivity {
 
         signupButton = findViewById(R.id.buttonSignUpPage);
 
-        signupButton.setOnClickListener(new View.OnClickListener(){
+        /*signupButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                confirmInput();
                 registerUser(textEmployeeID.getEditText().getText().toString(),
                         textInputFirstName.getEditText().getText().toString(),
                         textInputLastName.getEditText().getText().toString(),
@@ -70,7 +70,7 @@ public class SignUpActivity extends AppCompatActivity {
                         textInputPassword.getEditText().getText().toString(),
                         textEmail.getEditText().getText().toString());
             }
-        });
+        });*/
 
         //signUpButonActivity();
     }
@@ -159,6 +159,13 @@ public class SignUpActivity extends AppCompatActivity {
             return;
         }
         //loginButtonActivity();
+        registerUser(textEmployeeID.getEditText().getText().toString(),
+                textInputFirstName.getEditText().getText().toString(),
+                textInputLastName.getEditText().getText().toString(),
+                textInputPhoneNo.getEditText().getText().toString(),
+                textInputPassword.getEditText().getText().toString(),
+                textEmail.getEditText().getText().toString());
+
         startActivity(new Intent(SignUpActivity.this, LoginScreenActivity.class));
         finish();
     }
