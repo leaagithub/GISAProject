@@ -126,6 +126,7 @@ public class LoginScreenActivity extends AppCompatActivity {
         }
 
 
+
         String input = "Username: "+ textInputUsername.getEditText().getText().toString();
         input += "\n";
         input += "Password: "+ textInputPassword.getEditText().getText().toString();
@@ -133,6 +134,9 @@ public class LoginScreenActivity extends AppCompatActivity {
         Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
         loginUser(textInputUsername.getEditText().getText().toString(),
                 textInputPassword.getEditText().getText().toString());
+        if (!correctLogin()){
+            return;
+        }
         //loginButtonActivity();
         startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
         finish();
