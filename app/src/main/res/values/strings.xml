@@ -60,4 +60,15 @@
     <string name="IncidentTypeAndDistribWaterDrainSurface">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainSurface</string>
     <string name="IncidentTypeAndDistribWaterDrainTorrent">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainTorrent</string>
 
+    <string name="MeasurementSlopeHeight">com.phoenixcodingcsc191.gisaproject.MeasurementSlopeHeight</string>
+    <string name="MeasurementOriginalSlope">com.phoenixcodingcsc191.gisaproject.MeasurementOriginalSlope</string>
+    <string name="MeasurementLandslideWidth">com.phoenixcodingcsc191.gisaproject.MeasurementLandslideWidth</string>
+    <string name="MeasurementLandslideLength">com.phoenixcodingcsc191.gisaproject.MeasurementLandslideLength</string>
+    <string name="MeasurementMainscrapHeight">com.phoenixcodingcsc191.gisaproject.MeasurementMainscrapHeight</string>
+    <string name="MeasurementLandslideSlope">com.phoenixcodingcsc191.gisaproject.MeasurementLandslideSlope</string>
+    <string name="MeasurementLengthOfRoadwayEncroached">com.phoenixcodingcsc191.gisaproject.MeasurementLengthOfRoadwayEncroached</string>
+    <string name="MeasurementWidthOfRoadwayEncroached">com.phoenixcodingcsc191.gisaproject.MeasurementWidthOfRoadwayEncroached</string>
+
+
+
 </resources>
