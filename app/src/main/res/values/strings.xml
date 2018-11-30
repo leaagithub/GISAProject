@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GISAProject</string>
+    <string name="SiteInfoDate">com.phoenixcodingcsc191.gisaproject.SiteInfoDate</string>
+    <string name="SiteInfoDistrict">com.phoenixcodingcsc191.gisaproject.SiteInfoDistrict</string>
+    <string name="SiteInfoCountry">com.phoenixcodingcsc191.gisaproject.SiteInfoCounty</string>
+    <string name="SiteInfoRoute">com.phoenixcodingcsc191.gisaproject.SiteInfoRoute</string>
+    <string name="SiteInfoPostMile">com.phoenixcodingcsc191.gisaproject.SiteInfoPostMile</string>
+    <string name="SiteInfoDateIncidentReport">com.phoenixcodingcsc191.gisaproject.SiteInfoDateIncidentReport</string>
+    <string name="SiteInfoLatitude">com.phoenixcodingcsc191.gisaproject.SiteInfoLatitude</string>
+    <string name="SiteInfoLongitude">com.phoenixcodingcsc191.gisaproject.SiteInfoLongitude</string>
 </resources>
