@@ -81,10 +81,25 @@ public class SignUpActivity extends AppCompatActivity {
             .subscribe(new Consumer<String>() {
                 @Override
                 public void accept(String s) throws Exception {
+                    successfulRegister(s);
 
                 }
             })
         );
+    }
+    private void successfulRegister(String s){
+        String successful = new String("Registered");
+        if(successful.equals(s)){
+            showResponse("Successful Status: " + s);
+            startActivity(new Intent(SignUpActivity.this, LoginScreenActivity.class));
+            finish();
+        }
+        else {
+            showResponse("Status: " + s);
+        }
+    }
+    public void showResponse(String response){
+        Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
     }
     @Override public void onBackPressed(){}
     private void signUpButonActivity(){
@@ -153,9 +168,20 @@ public class SignUpActivity extends AppCompatActivity {
             return true;
         }
     }
+    private boolean validateEmail(){
+        String emailInput = textEmail.getEditText().getText().toString().trim();
+
+        if(emailInput.isEmpty()){
+            textEmail.setError("Email Cannot be Empty");
+            return false;
+        }else{
+            textEmail.setError(null);
+            return true;
+        }
+    }
 
     public void confirmInput(View v){
-        if (!validateFirstName() | !validateLastName() | !validateEmployeeID() | !validatePhoneNo() | !validatePassword()){
+        if (!validateFirstName() | !validateLastName() | !validateEmployeeID() | !validatePhoneNo() | !validatePassword() | !validateEmail()){
             return;
         }
         //loginButtonActivity();
@@ -166,6 +192,8 @@ public class SignUpActivity extends AppCompatActivity {
                 textInputPassword.getEditText().getText().toString(),
                 textEmail.getEditText().getText().toString());
 
+    }
+    public void cancelSignUp(View v){
         startActivity(new Intent(SignUpActivity.this, LoginScreenActivity.class));
         finish();
     }

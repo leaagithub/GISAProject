@@ -55,7 +55,7 @@ app.post('/register/',(req,res)=>{
 			console.log('[MySQL ERROR]',err);
 		});
 		if(result && result.length){
-			res.json('UAE');
+			res.json('User already exists!!!');
             console.log('User already exists!!!');
 		}
 		else
@@ -67,7 +67,7 @@ app.post('/register/',(req,res)=>{
 				console.log('[MySQL Error]',err);
 				res.json('Register error: ',err);
 			});
-			res.json('Register successful!!');
+			res.end('Registered');
             console.log('Register Successful!!');
 		})
 		}
