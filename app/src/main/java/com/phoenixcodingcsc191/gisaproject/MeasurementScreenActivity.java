@@ -15,9 +15,19 @@ public class MeasurementScreenActivity extends AppCompatActivity {
         saveAndExitButtonActivity();
         previousButtonActivity();
         nextPageButtonActivity();
+        helpButtonActivity();
     }
     @Override public void onBackPressed(){}
 
+    private void helpButtonActivity(){
+        Button helpButton = (Button) findViewById(R.id.buttonHelpMeasurementScreen);
+        helpButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+            }
+        });
+    }
     private void saveAndExitButtonActivity(){
         Button saveAndExitButton = (Button) findViewById(R.id.buttonSaveAndExitMeasurementPage);
         saveAndExitButton.setOnClickListener(new View.OnClickListener(){

@@ -91,7 +91,7 @@ app.post('/login',(req,res,next)=>{
                 console.log('Login Successful');
 			}
 			else{
-				res.end(JSON.stringify('WRONG PASSWORD'));
+				res.end(JSON.stringify('Wrong Password'));
                 console.log('Wrong Passowrd');
             }
 		}

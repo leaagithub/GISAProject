@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">GISAProject</string>
+
+
     <string name="SiteInfoDate">com.phoenixcodingcsc191.gisaproject.SiteInfoDate</string>
     <string name="SiteInfoDistrict">com.phoenixcodingcsc191.gisaproject.SiteInfoDistrict</string>
     <string name="SiteInfoCountry">com.phoenixcodingcsc191.gisaproject.SiteInfoCounty</string>
@@ -8,4 +10,54 @@
     <string name="SiteInfoDateIncidentReport">com.phoenixcodingcsc191.gisaproject.SiteInfoDateIncidentReport</string>
     <string name="SiteInfoLatitude">com.phoenixcodingcsc191.gisaproject.SiteInfoLatitude</string>
     <string name="SiteInfoLongitude">com.phoenixcodingcsc191.gisaproject.SiteInfoLongitude</string>
+
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeRock">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeRock</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeTopple">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeTopple</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeSlide">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeSlide</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeSpread">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeSpread</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeFlow">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeFlow</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeCompound">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeCompound</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeErosion">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeErosion</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe</string>
+    <string name="IncidentTypeAndDistribCheckBoxIncidentWashedout">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribCheckBoxIncidentTypeWashedout</string>
+
+    <string name="IncidentTypeAndDistribRadiogroupDistribution">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribRadiogroupDistribution</string>
+    <string name="IncidentTypeAndDistribRadiogroupHighWayStatus">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribRadiogroupHighWayStatus</string>
+
+    <string name="IncidentTypeAndDistribPaymentCheckbox">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentCheckbox</string>
+    <string name="IncidentTypeAndDistribPaymentLength">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentLength</string>
+    <string name="IncidentTypeAndDistribPaymentVertDisp">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentVertDisp</string>
+    <string name="IncidentTypeAndDistribPaymentHoriDisp">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentHoriDisp</string>
+    <string name="IncidentTypeAndDistribPaymentDepth">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentDepth</string>
+    <string name="IncidentTypeAndDistribPaymentSettlement">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentSettlement</string>
+    <string name="IncidentTypeAndDistribPaymentBulge">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentBulge</string>
+    <string name="IncidentTypeAndDistribPaymentRockIndentCheckbox">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribPaymentRockIndentCheckbox</string>
+
+    <string name="IncidentTypeAndDistribMaterialRock">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialRock</string>
+    <string name="IncidentTypeAndDistribMaterialBedding">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialBedding</string>
+    <string name="IncidentTypeAndDistribMaterialJoints">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialJoints</string>
+    <string name="IncidentTypeAndDistribMaterialFractures">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialFractures</string>
+    <string name="IncidentTypeAndDistribMaterialSoil">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialSoil</string>
+    <string name="IncidentTypeAndDistribMaterialClay">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialClay</string>
+    <string name="IncidentTypeAndDistribMaterialSilt">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialSilt</string>
+    <string name="IncidentTypeAndDistribMaterialSand">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialSand</string>
+    <string name="IncidentTypeAndDistribMaterialGravel">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribMaterialGravel</string>
+
+    <string name="IncidentTypeAndDistribWaterContentDry">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentDry</string>
+    <string name="IncidentTypeAndDistribWaterContentMoist">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentMoist</string>
+    <string name="IncidentTypeAndDistribWaterContentWet">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentWet</string>
+    <string name="IncidentTypeAndDistribWaterContentFlowing">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentFlowing</string>
+    <string name="IncidentTypeAndDistribWaterContentSeeping">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentSeeping</string>
+    <string name="IncidentTypeAndDistribWaterContentSpring">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterContentSpring</string>
+
+    <string name="IncidentTypeAndDistribVegetationTree">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribVegetationTree</string>
+    <string name="IncidentTypeAndDistribVegetationBushes">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribVegetationBushes</string>
+    <string name="IncidentTypeAndDistribVegetationGroundCover">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribVegetationGroundCover</string>
+
+    <string name="IncidentTypeAndDistribWaterDrainClogged">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainClogged</string>
+    <string name="IncidentTypeAndDistribWaterDrainCompromised">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainCompromised</string>
+    <string name="IncidentTypeAndDistribWaterDrainSurface">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainSurface</string>
+    <string name="IncidentTypeAndDistribWaterDrainTorrent">com.phoenixcodingcsc191.gisaproject.IncidentTypeAndDistribWaterDrainTorrent</string>
+
 </resources>

@@ -65,70 +65,70 @@
                             android:textStyle="bold" />
 
                         <CheckBox
-                            android:id="@+id/checkBox"
+                            android:id="@+id/checkBoxRockIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="(Rock) Fall" />
 
                         <CheckBox
-                            android:id="@+id/checkBox2"
+                            android:id="@+id/checkBoxToppleIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Topple" />
 
                         <CheckBox
-                            android:id="@+id/checkBox3"
+                            android:id="@+id/checkBoxSlideIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Slide" />
 
                         <CheckBox
-                            android:id="@+id/checkBox4"
+                            android:id="@+id/checkBoxSpreadIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Spread" />
 
                         <CheckBox
-                            android:id="@+id/checkBox5"
+                            android:id="@+id/checkBoxFlowIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Flow" />
 
                         <CheckBox
-                            android:id="@+id/checkBox6"
+                            android:id="@+id/checkBoxCompoundIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Compound" />
 
                         <CheckBox
-                            android:id="@+id/checkBox7"
+                            android:id="@+id/checkBoxErosionIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Erosion" />
 
                         <CheckBox
-                            android:id="@+id/checkBox8"
+                            android:id="@+id/checkBoxSuperFacialIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Superfacial Sloughing" />
 
                         <CheckBox
-                            android:id="@+id/checkBox9"
+                            android:id="@+id/checkBoxScouredToeIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="Scoured Toe" />
 
                         <CheckBox
-                            android:id="@+id/checkBox10"
+                            android:id="@+id/checkBoxWashOutIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -150,45 +150,46 @@
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:id="@+id/radioGroupDistribIT">
 
                             <RadioButton
-                                android:id="@+id/radioButton"
+                                android:id="@+id/radioButtonAdvancingIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Advancing" />
 
                             <RadioButton
-                                android:id="@+id/radioButton2"
+                                android:id="@+id/radioButtonRetrogressingIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Retrogressing" />
 
                             <RadioButton
-                                android:id="@+id/radioButton3"
+                                android:id="@+id/radioButtonEnlargingIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Enlarging" />
 
                             <RadioButton
-                                android:id="@+id/radioButton4"
+                                android:id="@+id/radioButtonWideningIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Widening" />
 
                             <RadioButton
-                                android:id="@+id/radioButton5"
+                                android:id="@+id/radioButtonMovingIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Moving" />
 
                             <RadioButton
-                                android:id="@+id/radioButton6"
+                                android:id="@+id/radioButtonCombinedIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -219,38 +220,39 @@
 
                         <RadioGroup
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:id="@+id/radioGroupHighWayStatusIT">
 
                             <RadioButton
-                                android:id="@+id/radioButton7"
+                                android:id="@+id/radioButtonOpenIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Open" />
 
                             <RadioButton
-                                android:id="@+id/radioButton8"
+                                android:id="@+id/radioButtonShoulderClosedIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Shoulder Closed" />
 
                             <RadioButton
-                                android:id="@+id/radioButton9"
+                                android:id="@+id/radioButtonLaneClosedIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Lane Closed" />
 
                             <RadioButton
-                                android:id="@+id/radioButton10"
+                                android:id="@+id/radioButtonOneWayClosedIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="One-way Closed" />
 
                             <RadioButton
-                                android:id="@+id/radioButton11"
+                                android:id="@+id/radioButtonTwoWayClosedIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -272,7 +274,7 @@
                             android:textStyle="bold" />
 
                         <CheckBox
-                            android:id="@+id/checkBox11"
+                            android:id="@+id/checkBoxPavementStatusIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Payment/Ground Cracks" />
@@ -289,7 +291,7 @@
                                 android:orientation="horizontal">
 
                                 <EditText
-                                    android:id="@+id/editText2"
+                                    android:id="@+id/editTextFeetLengthIT"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
@@ -313,7 +315,7 @@
                                 android:orientation="horizontal">
 
                                 <EditText
-                                    android:id="@+id/editText3"
+                                    android:id="@+id/editTextInchesVertDisIT"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
@@ -335,7 +337,7 @@
                                 android:orientation="horizontal">
 
                                 <EditText
-                                    android:id="@+id/editText4"
+                                    android:id="@+id/editTextInchesHorizDisIT"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
@@ -357,7 +359,7 @@
                                 android:orientation="horizontal">
 
                                 <EditText
-                                    android:id="@+id/editText5"
+                                    android:id="@+id/editTextInchesDepthCrackIT"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="2"
@@ -386,7 +388,7 @@
                                     android:text="Settlement" />
 
                                 <EditText
-                                    android:id="@+id/editText6"
+                                    android:id="@+id/editTextSettlementInchIT"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="4"
@@ -416,7 +418,7 @@
                                     android:text="Bulge" />
 
                                 <EditText
-                                    android:id="@+id/editText7"
+                                    android:id="@+id/editTextBulgeIT"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="4"
@@ -435,7 +437,7 @@
                         </LinearLayout>
 
                         <CheckBox
-                            android:id="@+id/checkBox12"
+                            android:id="@+id/checkBoxIndentRocksIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Indented by Rocks" />
@@ -462,25 +464,25 @@
                             android:textStyle="bold" />
 
                         <CheckBox
-                            android:id="@+id/checkBox13"
+                            android:id="@+id/checkBoxMatRockIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Rock" />
 
                         <CheckBox
-                            android:id="@+id/checkBox14"
+                            android:id="@+id/checkBoxMatBeddingIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Bedding" />
 
                         <CheckBox
-                            android:id="@+id/checkBox15"
+                            android:id="@+id/checkBoxMatJointsIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Joints" />
 
                         <CheckBox
-                            android:id="@+id/checkBox16"
+                            android:id="@+id/checkBoxMatFacturesIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Fractures" />
@@ -491,7 +493,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox17"
+                                android:id="@+id/checkBoxMatSoilIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -518,7 +520,7 @@
                                 android:text="Clay" />
 
                             <EditText
-                                android:id="@+id/editText"
+                                android:id="@+id/editTextClayPercIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -539,7 +541,7 @@
                                 android:text="Silt" />
 
                             <EditText
-                                android:id="@+id/editText8"
+                                android:id="@+id/editTextSiltPercIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -560,7 +562,7 @@
                                 android:text="Sand" />
 
                             <EditText
-                                android:id="@+id/editText9"
+                                android:id="@+id/editTextSandPercIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -581,7 +583,7 @@
                                 android:text="Gravel" />
 
                             <EditText
-                                android:id="@+id/editText10"
+                                android:id="@+id/editTextGravPercIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -605,37 +607,37 @@
                             android:textStyle="bold" />
 
                         <CheckBox
-                            android:id="@+id/checkBox18"
+                            android:id="@+id/checkBoxWaterContentDryIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Dry" />
 
                         <CheckBox
-                            android:id="@+id/checkBox19"
+                            android:id="@+id/checkBoxWaterContentMoistIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Moist" />
 
                         <CheckBox
-                            android:id="@+id/checkBox20"
+                            android:id="@+id/checkBoxWaterContentWetIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Wet" />
 
                         <CheckBox
-                            android:id="@+id/checkBox21"
+                            android:id="@+id/checkBoxWaterContentFlowingIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Flowing" />
 
                         <CheckBox
-                            android:id="@+id/checkBox22"
+                            android:id="@+id/checkBoxWaterContentSeepIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Seep" />
 
                         <CheckBox
-                            android:id="@+id/checkBox23"
+                            android:id="@+id/checkBoxWaterContentSpringIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Spring" />
@@ -688,7 +690,7 @@
                                 android:text="Trees" />
 
                             <EditText
-                                android:id="@+id/editText11"
+                                android:id="@+id/editTextTreeCoverageIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -709,7 +711,7 @@
                                 android:text="Bushes/Shrubs" />
 
                             <EditText
-                                android:id="@+id/editText12"
+                                android:id="@+id/editTextBushesCoverageIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -730,7 +732,7 @@
                                 android:text="Groundcover" />
 
                             <EditText
-                                android:id="@+id/editText13"
+                                android:id="@+id/editTextGroundCoverageIT"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -753,25 +755,25 @@
                             android:textStyle="bold" />
 
                         <CheckBox
-                            android:id="@+id/checkBox24"
+                            android:id="@+id/checkBoxCloggedInletIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Clogged Inlet" />
 
                         <CheckBox
-                            android:id="@+id/checkBox25"
+                            android:id="@+id/checkBoxCompromiseDrainsIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Compromised Drains" />
 
                         <CheckBox
-                            android:id="@+id/checkBox26"
+                            android:id="@+id/checkBoxSurfaceDrainsIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Surface Drains" />
 
                         <CheckBox
-                            android:id="@+id/checkBox27"
+                            android:id="@+id/checkBoxTorrentSurgeFloodIT"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Torrent, Surge, Flood" />
@@ -790,7 +792,7 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/buttonBackIT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -803,7 +805,7 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/buttonNextIT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
