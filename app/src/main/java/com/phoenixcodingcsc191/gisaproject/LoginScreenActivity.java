@@ -50,6 +50,7 @@ public class LoginScreenActivity extends AppCompatActivity {
         myAPI = retrofit.create(INODEJS.class);
 
         signUpButtonActivity();
+        //loginButtonActivity();
         //
     }
     @Override public void onBackPressed(){}
@@ -69,8 +70,8 @@ public class LoginScreenActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
-                finish();
+                    startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
+                    finish();
             }
         });
     }
@@ -96,7 +97,8 @@ public class LoginScreenActivity extends AppCompatActivity {
                 .subscribe(new Consumer<String>() {
                     @Override
                     public void accept(String s) throws Exception {
-                        postResponse = s;
+                        //showResponse(s);
+                        correctLogin(s);
                     }
                 })
         );
@@ -112,16 +114,15 @@ public class LoginScreenActivity extends AppCompatActivity {
             return true;
         }
     }
-    public boolean correctLogin(){
+    private void correctLogin(String s){
         String successful = new String("Successful");
-        loginUser(textInputUsername.getEditText().getText().toString(),
-                textInputPassword.getEditText().getText().toString());
-        if(postResponse.equals(successful)){
-            showResponse("Status: " + postResponse);
-            return true;
+        if(successful.equals(s)){
+            showResponse("Status: " + s);
+            startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
+            finish();
         }
         else {
-            return false;
+            showResponse("Status: " + s);
         }
     }
     public void confirmInput(View v){
@@ -130,13 +131,12 @@ public class LoginScreenActivity extends AppCompatActivity {
         input += "Password: "+ textInputPassword.getEditText().getText().toString();
         //Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
 
-        if (!validateUser() | !validatePassword() | !correctLogin()){
+        if (!validateUser() | !validatePassword()){
             return;
         }
-
+        loginUser(textInputUsername.getEditText().getText().toString(),
+                textInputPassword.getEditText().getText().toString());
         //loginButtonActivity();
-        startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
-        finish();
     }
     public void showResponse(String response){
         Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
