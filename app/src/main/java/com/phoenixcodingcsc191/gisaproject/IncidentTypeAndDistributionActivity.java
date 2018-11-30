@@ -325,8 +325,8 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         }
         MaterialClay.setText(MaterialClaySaved);
         MaterialSilt.setText(MaterialSiltSaved);
-        MaterialFractures.setText(MaterialFractureSaved);
-        MaterialSoil.setText(MaterialSoilSaved);
+        MaterialSand.setText(MaterialSandSaved);
+        MaterialGravel.setText(MaterialGravelSaved);
         //WATER CONTENT
         if(WaterContentDrySaved.equals("True")){
             WaterContentDry.setChecked(true);
