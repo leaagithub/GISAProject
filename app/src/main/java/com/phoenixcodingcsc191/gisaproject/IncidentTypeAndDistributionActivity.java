@@ -447,14 +447,26 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         else{
             mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"False");
         }
-        //DISTRIBUTIONS RADIO BUTTONS
+        //DISTRIBUTIONS RADIO GROUP
         int distributionbuttonID = distribution.getCheckedRadioButtonId();
-        RadioButton distributionButton = (RadioButton) findViewById(distributionbuttonID);
-        String distributionAns = distributionButton.getText().toString();
-        //HIGHWAY STATUS RADIO BUTTONS
+        String distributionAns = "";
+        if (distributionbuttonID == -1){
+            distributionAns = "False";
+        }
+        else{
+            RadioButton distributionButton = (RadioButton) findViewById(distributionbuttonID);
+            distributionAns = distributionButton.getText().toString();
+        }
+        //HIGHWAY STATUS RADIO GROUP
         int highwaystatusbuttoncheckID = highwayStatus.getCheckedRadioButtonId();
-        RadioButton highwaystatusChcked = (RadioButton) findViewById(highwaystatusbuttoncheckID);
-        String highwayStatusAns = highwaystatusChcked.getText().toString();
+        String highwayStatusAns = "";
+        if (highwaystatusbuttoncheckID == -1){
+            highwayStatusAns = "False";
+        }
+        else{
+            RadioButton highwaystatusChcked = (RadioButton) findViewById(highwaystatusbuttoncheckID);
+            highwayStatusAns = highwaystatusChcked.getText().toString();
+        }
         mEditor.putString(getString(R.string.IncidentTypeAndDistribRadiogroupHighWayStatus),highwayStatusAns);
         mEditor.putString(getString(R.string.IncidentTypeAndDistribRadiogroupDistribution),distributionAns);
 

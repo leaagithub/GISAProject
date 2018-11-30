@@ -96,7 +96,6 @@ public class LoginScreenActivity extends AppCompatActivity {
                 .subscribe(new Consumer<String>() {
                     @Override
                     public void accept(String s) throws Exception {
-                        showResponse("Status: " + s);
                         postResponse = s;
                     }
                 })
@@ -115,28 +114,26 @@ public class LoginScreenActivity extends AppCompatActivity {
     }
     public boolean correctLogin(){
         String successful = new String("Successful");
+        loginUser(textInputUsername.getEditText().getText().toString(),
+                textInputPassword.getEditText().getText().toString());
         if(postResponse.equals(successful)){
+            showResponse("Status: " + postResponse);
             return true;
         }
-        else return false;
+        else {
+            return false;
+        }
     }
     public void confirmInput(View v){
-        if (!validateUser() | !validatePassword()){
-            return;
-        }
-
-
-
         String input = "Username: "+ textInputUsername.getEditText().getText().toString();
         input += "\n";
         input += "Password: "+ textInputPassword.getEditText().getText().toString();
+        //Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
-        loginUser(textInputUsername.getEditText().getText().toString(),
-                textInputPassword.getEditText().getText().toString());
-        if (!correctLogin()){
+        if (!validateUser() | !validatePassword() | !correctLogin()){
             return;
         }
+
         //loginButtonActivity();
         startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
         finish();
