@@ -143,12 +143,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox28"
+                                android:id="@+id/checkBoxImmediateActionsOpenHighwayTraffic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox44"
+                                android:id="@+id/checkBoxFollowUpActionsOpenHighwayTraffic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -165,12 +165,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox29"
+                                android:id="@+id/checkBoxImmediateActionsOpenHighwayShoulder"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox45"
+                                android:id="@+id/checkBoxFollowUpActionsOpenHighwayShoulder"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:visibility="visible" />
@@ -188,7 +188,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox30"
+                                android:id="@+id/checkBoxImmediateActionsCloseHighway"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -211,7 +211,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox31"
+                                android:id="@+id/checkBoxImmediateActionsRemovedLandsideDebris"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -234,7 +234,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox32"
+                                android:id="@+id/checkBoxImmediateActionsPlaceKRail"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -257,7 +257,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox33"
+                                android:id="@+id/checkBoxImmediateActionsCoverSlope"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -280,7 +280,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox34"
+                                android:id="@+id/checkBoxImmediateActionsDivertSurface"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -303,7 +303,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox35"
+                                android:id="@+id/checkBoxImmediateActionsRemoveCulvert"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -326,7 +326,7 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox36"
+                                android:id="@+id/checkBoxImmediateActionsDewaterPump"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -349,12 +349,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox37"
+                                android:id="@+id/checkBoxImmediateActionsDewaterHorizontalDrains"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox53"
+                                android:id="@+id/checkBoxFollowUpActionsDewaterHorizontalDrains"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -371,12 +371,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox38"
+                                android:id="@+id/checkBoxImmediateActionsConstructTempShoring"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox54"
+                                android:id="@+id/checkBoxFollowUpActionsConstructTempShoring"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -393,12 +393,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox39"
+                                android:id="@+id/checkBoxImmediateActionsButtressToeOfLandslide"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox55"
+                                android:id="@+id/checkBoxFollowUpActionsButtressToeOfLandslide"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -415,12 +415,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox40"
+                                android:id="@+id/checkBoxImmediateActionsPlaceRockSlopeProtect"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox56"
+                                android:id="@+id/checkBoxFollowUpActionsPlaceRockSlopeProtect"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -437,12 +437,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox41"
+                                android:id="@+id/checkBoxImmediateActionsRoutineVisualMonitor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox57"
+                                android:id="@+id/checkBoxFollowUpActionsRoutineVisualMonitor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -459,12 +459,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox42"
+                                android:id="@+id/checkBoxImmediateActionsReconstructSlopeOG"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox58"
+                                android:id="@+id/checkBoxFollowUpActionsReconstructSlopeOG"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -481,12 +481,12 @@
                             android:orientation="horizontal">
 
                             <CheckBox
-                                android:id="@+id/checkBox43"
+                                android:id="@+id/checkBoxImmediateActionsReconstructSlopeGeo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
                             <CheckBox
-                                android:id="@+id/checkBox59"
+                                android:id="@+id/checkBoxFollowUpActionsReconstructSlopeGeo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -509,7 +509,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox60"
+                                android:id="@+id/checkBoxFollowUpActionsRepairPipe"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -532,7 +532,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox61"
+                                android:id="@+id/checkBoxFollowUpActionsInstallErosion"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -555,7 +555,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox62"
+                                android:id="@+id/checkBoxFollowUpActionsSurveyTheSite"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -578,7 +578,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox63"
+                                android:id="@+id/checkBoxFollowUpActionsPerformGeologicalMapping"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -601,7 +601,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox64"
+                                android:id="@+id/checkBoxFollowUpActionsPerformSubsurfaceExploration"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
@@ -624,7 +624,7 @@
                                 android:visibility="invisible" />
 
                             <CheckBox
-                                android:id="@+id/checkBox65"
+                                android:id="@+id/checkBoxFollowUpActionsPerformDetailedDesign"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 

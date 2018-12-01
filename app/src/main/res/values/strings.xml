@@ -69,6 +69,40 @@
     <string name="MeasurementLengthOfRoadwayEncroached">com.phoenixcodingcsc191.gisaproject.MeasurementLengthOfRoadwayEncroached</string>
     <string name="MeasurementWidthOfRoadwayEncroached">com.phoenixcodingcsc191.gisaproject.MeasurementWidthOfRoadwayEncroached</string>
 
+    <string name="ObservationNotes">com.phoenixcodingcsc191.gisaproject.ObservationNotes</string>
+
+    <string name="RecommendedActioncheckBoxImmediateActionsOpenHighwayTraffic">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsOpenHighwayTraffic</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsOpenHighwayTraffic">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsOpenHighwayTraffic</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsOpenHighwayShoulder">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsOpenHighwayShoulder</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsOpenHighwayShoulder">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsOpenHighwayShoulder</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsCloseHighway">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsCloseHighway</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsRemovedLandsideDebris">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsRemovedLandsideDebris</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsPlaceKRail">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsPlaceKRail</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsCoverSlope">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsCoverSlope</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsDivertSurface">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsDivertSurface</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsRemoveCulvert">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsRemoveCulvert</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsDewaterPump">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsDewaterPump</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsDewaterHorizontalDrains">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsDewaterHorizontalDrains</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsDewaterHorizontalDrains">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsDewaterHorizontalDrains</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsConstructTempShoring">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsConstructTempShoring</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsConstructTempShoring">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsConstructTempShoring</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsButtressToeOfLandslide">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsButtressToeOfLandslide</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsButtressToeOfLandslide">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsButtressToeOfLandslide</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsPlaceRockSlopeProtect">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsPlaceRockSlopeProtect</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsPlaceRockSlopeProtect">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsPlaceRockSlopeProtect</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsRoutineVisualMonitor">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsRoutineVisualMonitor</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsRoutineVisualMonitor">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsRoutineVisualMonitor</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsReconstructSlopeOG">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsReconstructSlopeOG</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsReconstructSlopeOG">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeOG</string>
+    <string name="RecommendedActioncheckBoxImmediateActionsReconstructSlopeGeo">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxImmediateActionsReconstructSlopeGeo</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsReconstructSlopeGeo">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeGeo</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsRepairPipe">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsRepairPipe</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsInstallErosion">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsInstallErosion</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsSurveyTheSite">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsSurveyTheSite</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsPerformGeologicalMapping">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsPerformGeologicalMapping</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsPerformSubsurfaceExploration">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsPerformSubsurfaceExploration</string>
+    <string name="RecommendedActioncheckBoxFollowUpActionsPerformDetailedDesign">com.phoenixcodingcsc191.gisaproject.RecommendedActioncheckBoxFollowUpActionsPerformDetailedDesign</string>
+
 
 
 </resources>
