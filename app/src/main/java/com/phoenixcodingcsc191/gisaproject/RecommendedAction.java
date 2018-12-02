@@ -491,6 +491,7 @@ public class RecommendedAction extends AppCompatActivity {
         saveAndExit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                savePref();
                 startActivity(new Intent(RecommendedAction.this, ObservationScreenActivity.class));
                 finish();
             }
@@ -501,6 +502,7 @@ public class RecommendedAction extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                savePref();
                 startActivity(new Intent(RecommendedAction.this, IncidentOptionsActivity.class));
                 finish();
             }

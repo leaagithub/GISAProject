@@ -1,10 +1,16 @@
 package com.phoenixcodingcsc191.gisaproject;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import com.byox.drawview.enums.DrawingCapture;
 import com.byox.drawview.views.DrawView;
 //import com.byox.drawviewproject.dialogs.SaveBitmapDialog;
@@ -12,8 +18,7 @@ import com.byox.drawview.views.DrawView;
 public class SketchActivity extends AppCompatActivity {
 
     private DrawView mDrawView;
-
-
+    private FloatingActionButton mFabClearDraw;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,10 +117,30 @@ public class SketchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
+                SaveBitmapDialog saveBitmapDialog = SaveBitmapDialog.newInstance();
+                Object[] createCaptureResponse = mDrawView.createCapture(DrawingCapture.BITMAP);
+                saveBitmapDialog.setPreviewBitmap((Bitmap) createCaptureResponse[0]);
+                saveBitmapDialog.setPreviewFormat(String.valueOf(createCaptureResponse[1]));
+                saveBitmapDialog.setOnSaveBitmapListener(new SaveBitmapDialog.OnSaveBitmapListener() {
+                    @Override
+                    public void onSaveBitmapCompleted() {
+                        //Snackbar.make(mFabClearDraw, "Capture saved succesfully!", 2000).show();
+                        showResponse("Capture saved succesfully!");
+                    }
+
+                    @Override
+                    public void onSaveBitmapCanceled() {
+                        //Snackbar.make(mFabClearDraw, "Capture saved canceled.", 2000).show();
+                        showResponse("Capture saved canceled.");
+                    }
+                });
+                saveBitmapDialog.show(getSupportFragmentManager(), "saveBitmap");
             }
         });
     }
-
+    public void showResponse(String response){
+        Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
+    }
     private void saveAndExitButtonActivity(){
         Button saveAndExit = (Button) findViewById(R.id.buttonSaveAndExitSketch);
         saveAndExit.setOnClickListener(new View.OnClickListener(){

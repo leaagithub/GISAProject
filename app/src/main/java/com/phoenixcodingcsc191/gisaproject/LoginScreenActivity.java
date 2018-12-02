@@ -125,6 +125,10 @@ public class LoginScreenActivity extends AppCompatActivity {
             showResponse("Status: " + s);
         }
     }
+    public void skip(View v){
+        startActivity(new Intent(LoginScreenActivity.this, ObservationScreenActivity.class));
+        finish();
+    }
     public void confirmInput(View v){
         String input = "Username: "+ textInputUsername.getEditText().getText().toString();
         input += "\n";
