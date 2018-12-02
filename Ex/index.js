@@ -84,8 +84,135 @@ app.post('/submitMaterial/',(req,res,next)=>{
 		console.log('Material Table Registered Successful!!');
 	});
 })
-app.post('/submitFollowUpAction/',(req,res)=>{
-	var post_data
+app.post('/submitFollowUpActions/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var FollowUpActions = post_data.FollowUpActions;
+	var OpenLines = post_data.OpenLines;
+	var sql = 'INSERT INTO FollowUpActions (ProjectID,FollowUpActions,OpenLines) VALUES (?,?,?);'
+	connection.query(sql,[ProjectID,FollowUpActions,OpenLines],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('FollowUpActions Table Registered');
+		console.log(ProjectID);
+		console.log('FollowUpActions Table Registered Successful!!');
+	});
+})
+app.post('/submitImmediateActions/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var ImmediateActions = post_data.ImmediateActions;
+	var OpenLines = post_data.OpenLines;
+	var sql = 'INSERT INTO ImmediateActions (ProjectID,ImmediateActions,OpenLines) VALUES (?,?,?);'
+	connection.query(sql,[ProjectID,FollowUpActions,OpenLines],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('FollowUpActions Table Registered');
+		console.log(ProjectID);
+		console.log('FollowUpActions Table Registered Successful!!');
+	});
+})
+app.post('/submitIncidentType/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var IncidentType = post_data.IncidentType;
+	var sql = 'INSERT INTO IncidentType (ProjectID,IncidentType) VALUES (?,?);'
+	connection.query(sql,[ProjectID,IncidentType],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('IncidentType Table Registered');
+		console.log(ProjectID);
+		console.log('IncidentType Table Registered Successful!!');
+	});
+})
+app.post('/submitMeasurements/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var SlopeHeight_ft = post_data.SlopeHeight_ft;
+	var OriginalSlope_deg = post_data.OriginalSlope_deg;
+	var LandslideWidth_ft = post_data.LandslideWidth_ft;
+	var LandslideLength_ft = post_data.LandslideLength_ft;
+	var MainScarpHeight_ft = post_data.MainScarpHeight_ft;
+	var LandslideSlope_deg = post_data.LandslideSlope_deg;
+	var LengthOfRoadwayEncroached_ft = post_data.LengthOfRoadwayEncroached_ft;
+	var WidthOfRoadwayEncroached_ft = post_data.WidthOfRoadwayEncroached_ft;
+	var sql = 'INSERT INTO Measurements (ProjectID,SlopeHeight_ft,OriginalSlope_deg,LandslideWidth_ft,LandslideLength_ft,MainScarpHeight_ft,LandslideSlope_deg,LengthOfRoadwayEncroached_ft,WidthOfRoadwayEncroached_ft) VALUES (?,?,?,?,?,?,?,?,?);'
+	connection.query(sql,[ProjectID,SlopeHeight_ft,OriginalSlope_deg,LandslideWidth_ft,LandslideLength_ft,MainScarpHeight_ft,LandslideSlope_deg,LengthOfRoadwayEncroached_ft,WidthOfRoadwayEncroached_ft],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('Measurements Table Registered');
+		console.log(ProjectID);
+		console.log('Measurements Table Registered Successful!!');
+	});
+})
+app.post('/submitPavement_Ground_Status/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var PavementGroundCracks = post_data.PavementGroundCracks;
+	var CrackLength_feet = post_data.CrackLength_feet;
+	var CrackHorisontalDisposiion_inch = post_data.CrackHorisontalDisposiion_inch;
+	var CrackVerticalDisposiion_inch = post_data.CrackVerticalDisposiion_inch;
+	var DepthOfCrack_inch = post_data.DepthOfCrack_inch;
+	var Settlement_inch = post_data.Settlement_inch;
+	var Bulge_inch = post_data.Bulge_inch;
+	var IndentedByRocks = post_data.IndentedByRocks;
+	var sql = 'INSERT INTO Pavement_Ground_Status (ProjectID,PavementGroundCracks,CrackLength_feet,CrackHorisontalDisposiion_inch,CrackVerticalDisposiion_inch,DepthOfCrack_inch,Settlement_inch,Bulge_inch,IndentedByRocks) VALUES (?,?,?,?,?,?,?,?,?);'
+	connection.query(sql,[ProjectID,PavementGroundCracks,CrackLength_feet,CrackHorisontalDisposiion_inch,CrackVerticalDisposiion_inch,DepthOfCrack_inch,Settlement_inch,Bulge_inch,IndentedByRocks],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('Pavement_Ground_Status Table Registered');
+		console.log(ProjectID);
+		console.log('Pavement_Ground_Status Table Registered Successful!!');
+	});
+})
+app.post('/submitVegetationOnSlope/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var Trees = post_data.Trees;
+	var Bushes_Shrubs = post_data.Bushes_Shrubs;
+	var GroundCover = post_data.GroundCover;
+	var sql = 'INSERT INTO VegetationOnSlope (ProjectID,Trees,Bushes_Shrubs,GroundCover) VALUES (?,?,?,?);'
+	connection.query(sql,[ProjectID,Trees,Bushes_Shrubs,GroundCover],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('VegetationOnSlope Table Registered');
+		console.log(ProjectID);
+		console.log('VegetationOnSlope Table Registered Successful!!');
+	});
+})
+app.post('/submitWater_Drainage/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var Water_Drainage = post_data.Water_Drainage;
+	var sql = 'INSERT INTO Water_Drainage (ProjectID,Water_Drainage) VALUES (?,?);'
+	connection.query(sql,[ProjectID,Water_Drainage],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('Water_Drainage Table Registered');
+		console.log(ProjectID);
+		console.log('Water_Drainage Table Registered Successful!!');
+	});
 })
 app.post('/register/',(req,res)=>{
 	var post_data = req.body; //GET POST PARAMETERS
