@@ -3,7 +3,7 @@ var uuid = require('uuid');
 var express = require('express');
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
-var ProjectID;
+var GProjectID;
 var connection = mysql.createConnection({
   host     : 'mygisainst.c7mj9olumnzo.us-west-1.rds.amazonaws.com',
   user     : 'GISAlogin',
@@ -43,12 +43,11 @@ app.post('/submitIncidentReport/',(req,res)=>{
 	var AdjacentProperties = post_data.AdjacentProperties;
 	var Sketch = post_data.Sketch;
 	var Photos = post_data.Photos;
-	//Material Table VAR
 	var sql = 'INSERT INTO IncidentReport (DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 	connection.query(sql,[DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos],function (err, result,fields){
 		connection.on('error',function(err){
 			console.log('[MySQL Error]',err);
-			res.json('Register error: ',err);
+			res.json('SQL error: ',err);
 		});
 		res.end('Incident Report Registered');
 		console.log('Incident Report Registered Successful!!');
@@ -59,11 +58,35 @@ app.post('/submitIncidentReport/',(req,res)=>{
 			console.log('[MYSQL ERROR]',err);
 		});
 		console.log(result[0].ProjectID);
-		ProjectID = result[0].ProjectID;
+		GProjectID = result[0].ProjectID;
 	});
 })
-app.post()
-
+app.post('/submitMaterial/',(req,res,next)=>{
+	var post_data = req.body;
+	console.log(post_data);
+	var ProjectID = GProjectID;
+	var TypeOfMaterial = post_data.TypeOfMaterial;
+	var Bedding = post_data.Bedding;
+	var Joints = post_data.Joints;
+	var Fractures = post_data.Fractures;
+	var Clay = post_data.Clay;
+	var Silt = post_data.Silt;
+	var Sand = post_data.Sand;
+	var Gravel = post_data.Gravel;
+	var sql = 'INSERT INTO Material (ProjectID,TypeOfMaterial,Bedding,Joints,Fractures,Clay,Silt,Sand,Gravel) VALUES (?,?,?,?,?,?,?,?,?);'
+	connection.query(sql,[ProjectID,TypeOfMaterial,Bedding,Joints,Fractures,Clay,Silt,Sand,Gravel],function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('SQL error: ',err);
+		});
+		res.end('Material Table Registered');
+		console.log(ProjectID);
+		console.log('Material Table Registered Successful!!');
+	});
+})
+app.post('/submitFollowUpAction/',(req,res)=>{
+	var post_data
+})
 app.post('/register/',(req,res)=>{
 	var post_data = req.body; //GET POST PARAMETERS
 	console.log(post_data);
@@ -130,5 +153,5 @@ app.post('/login',(req,res,next)=>{
 
 app.get('/test',function(req,res){
 	res.send('Hello This is a Test');
-	console.log(ProjectID);
+	console.log(GProjectID);
 });
