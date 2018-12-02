@@ -3,7 +3,7 @@ var uuid = require('uuid');
 var express = require('express');
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
-
+var ProjectID;
 var connection = mysql.createConnection({
   host     : 'mygisainst.c7mj9olumnzo.us-west-1.rds.amazonaws.com',
   user     : 'GISAlogin',
@@ -22,15 +22,9 @@ connection.connect(function(err) {
 	if (err) throw err;
 	console.log("Connected!");
 });
-
-function randomValueHex (len) {
-    return crypto.randomBytes(Math.ceil(len/2))
-        .slice(0,len).toUpperCase();   // return required number of characters
-}
-
 app.post('/submitIncidentReport/',(req,res)=>{
     var post_data = req.body;
-	//Incident Report Table
+	//Incident Report Table VAR
 	console.log(post_data);
     var DateOfIncident = post_data.DateOfIncident;
     var DateOfReport = post_data.DateOfReport;
@@ -49,7 +43,7 @@ app.post('/submitIncidentReport/',(req,res)=>{
 	var AdjacentProperties = post_data.AdjacentProperties;
 	var Sketch = post_data.Sketch;
 	var Photos = post_data.Photos;
-
+	//Material Table VAR
 	var sql = 'INSERT INTO IncidentReport (DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
 	connection.query(sql,[DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos],function (err, result,fields){
 		connection.on('error',function(err){
@@ -59,8 +53,16 @@ app.post('/submitIncidentReport/',(req,res)=>{
 		res.end('Incident Report Registered');
 		console.log('Incident Report Registered Successful!!');
 	});
+	sql = 'SELECT ProjectID FROM IncidentReport ORDER BY ProjectID DESC LIMIT 1';
+	connection.query(sql,function(err,result,fields){
+		connection.on('error',function(err){
+			console.log('[MYSQL ERROR]',err);
+		});
+		console.log(result[0].ProjectID);
+		ProjectID = result[0].ProjectID;
+	});
 })
-
+app.post()
 
 app.post('/register/',(req,res)=>{
 	var post_data = req.body; //GET POST PARAMETERS
@@ -127,5 +129,6 @@ app.post('/login',(req,res,next)=>{
 })
 
 app.get('/test',function(req,res){
-    res.send('Hello This is a Test');
+	res.send('Hello This is a Test');
+	console.log(ProjectID);
 });
