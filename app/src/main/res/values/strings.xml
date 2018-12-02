@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GISAProject</string>
 
+    <string name="CALTRANSEmployeeID">com.phoenixcodingcsc191.gisaproject.CALTRANSEmployeeID</string>
 
     <string name="SiteInfoDate">com.phoenixcodingcsc191.gisaproject.SiteInfoDate</string>
     <string name="SiteInfoDistrict">com.phoenixcodingcsc191.gisaproject.SiteInfoDistrict</string>

@@ -1,7 +1,9 @@
 package com.phoenixcodingcsc191.gisaproject;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,6 +25,10 @@ public class LoginScreenActivity extends AppCompatActivity {
 
     INODEJS myAPI;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
+
+    private SharedPreferences mLogin;
+    private SharedPreferences.Editor mEditor;
+
     private TextInputLayout textInputUsername;
     private TextInputLayout textInputPassword;
     private String postResponse = "";
@@ -48,6 +54,9 @@ public class LoginScreenActivity extends AppCompatActivity {
         //Init API
         Retrofit retrofit = RetrofitClient.getInstance();
         myAPI = retrofit.create(INODEJS.class);
+
+        mLogin = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mLogin.edit();
 
         signUpButtonActivity();
         //loginButtonActivity();
@@ -118,6 +127,8 @@ public class LoginScreenActivity extends AppCompatActivity {
         String successful = new String("Successful");
         if(successful.equals(s)){
             showResponse("Status: " + s);
+            mEditor.putString(getString(R.string.CALTRANSEmployeeID),textInputUsername.getEditText().getText().toString());
+            mEditor.commit();
             startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
             finish();
         }
