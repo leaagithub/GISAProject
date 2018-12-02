@@ -22,22 +22,46 @@ connection.connect(function(err) {
 	if (err) throw err;
 	console.log("Connected!");
 });
-app.post('/submit/',(req,res)=>{
+
+function randomValueHex (len) {
+    return crypto.randomBytes(Math.ceil(len/2))
+        .slice(0,len).toUpperCase();   // return required number of characters
+}
+
+app.post('/submitIncidentReport/',(req,res)=>{
     var post_data = req.body;
-    //Incident Report Table
-    var projectID = post_data.projectID;
+	//Incident Report Table
+	console.log(post_data);
     var DateOfIncident = post_data.DateOfIncident;
     var DateOfReport = post_data.DateOfReport;
     var District = post_data.District;
-    var Country = post_data.Country;
+    var County = post_data.County;
     var Route = post_data.Route;
     var Latitude = post_data.Latitude;
     var Longitude = post_data.Longitude;
     var Observation = post_data.Observation;
-    var EmployeeID = post_data.EmployeeID;
-    var Distribution = post_data.Distribution;
-    
+    var EmployeeId = post_data.EmployeeID;
+	var Distribution = post_data.Distribution;
+	var HighwayStatus = post_data.HighwayStatus;
+	var ClosedLanes = post_data.ClosedLanes;
+	var WaterContent = post_data.WaterContent;
+	var AdjacentUtilities = post_data.AdjacentUtilities;
+	var AdjacentProperties = post_data.AdjacentProperties;
+	var Sketch = post_data.Sketch;
+	var Photos = post_data.Photos;
+
+	var sql = 'INSERT INTO IncidentReport (DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);'
+	connection.query(sql,[DateOfIncident,DateOfReport,District,County,Route,Latitude,Longitude,Observation,EmployeeId,Distribution,HighwayStatus,ClosedLanes,WaterContent,AdjacentUtilities,AdjacentProperties,Photos],function (err, result,fields){
+		connection.on('error',function(err){
+			console.log('[MySQL Error]',err);
+			res.json('Register error: ',err);
+		});
+		res.end('Incident Report Registered');
+		console.log('Incident Report Registered Successful!!');
+	});
 })
+
+
 app.post('/register/',(req,res)=>{
 	var post_data = req.body; //GET POST PARAMETERS
 	console.log(post_data);
@@ -62,7 +86,7 @@ app.post('/register/',(req,res)=>{
 		{
 			//var sql = "INSERT Into Employee(CaltransID, FName, LName, PhoneNo, Password, Email) VALUES( ? , ? , ? , ? , ?, ?);";
 			connection.query("INSERT Into Employee(CaltransID, FName, LName, PhoneNo, Password, Email) VALUES( ? , ? , ? , ? , ?, ?);",[eid,fname,lname,phoneno,password,email],
-			function (err, result1,fields){
+			function (err, result,fields){
 			connection.on('error',function(err){
 				console.log('[MySQL Error]',err);
 				res.json('Register error: ',err);
@@ -101,6 +125,7 @@ app.post('/login',(req,res,next)=>{
 		}
 	});
 })
+
 app.get('/test',function(req,res){
     res.send('Hello This is a Test');
 });
