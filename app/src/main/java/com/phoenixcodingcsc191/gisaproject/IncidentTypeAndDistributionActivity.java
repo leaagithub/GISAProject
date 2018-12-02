@@ -182,10 +182,10 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         String MaterialJointsSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"False");
         String MaterialFractureSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"False");
         String MaterialSoilSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"False");
-        String MaterialClaySaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialClay),"False");
-        String MaterialSiltSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSilt),"False");
-        String MaterialSandSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSand),"False");
-        String MaterialGravelSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialGravel),"False");
+        String MaterialClaySaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialClay),"");
+        String MaterialSiltSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSilt),"");
+        String MaterialSandSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSand),"");
+        String MaterialGravelSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialGravel),"");
 
 
         //Water Content
