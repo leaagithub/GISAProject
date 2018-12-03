@@ -29,7 +29,10 @@ public class IncidentOptionsActivity extends AppCompatActivity {
         newIncidentButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                String loginsaved = mPreferences.getString(getString(R.string.CALTRANSEmployeeID),"");
                 clearStrings();
+                mEditor.putString(getString(R.string.CALTRANSEmployeeID),loginsaved);
+                mEditor.commit();
                 startActivity(new Intent(IncidentOptionsActivity.this, SiteInformationActivity.class));
                 finish();
             }

@@ -129,6 +129,7 @@ public class LoginScreenActivity extends AppCompatActivity {
             showResponse("Status: " + s);
             mEditor.putString(getString(R.string.CALTRANSEmployeeID),textInputUsername.getEditText().getText().toString());
             mEditor.commit();
+            showResponse(mLogin.getString(getString(R.string.CALTRANSEmployeeID),""));
             startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
             finish();
         }
@@ -137,7 +138,7 @@ public class LoginScreenActivity extends AppCompatActivity {
         }
     }
     public void skip(View v){
-        startActivity(new Intent(LoginScreenActivity.this, ObservationScreenActivity.class));
+        startActivity(new Intent(LoginScreenActivity.this, IncidentOptionsActivity.class));
         finish();
     }
     public void confirmInput(View v){
