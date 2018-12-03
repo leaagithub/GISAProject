@@ -154,34 +154,34 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
     }
 
     private void checkSharedPreference() {
-        String IncidentTypeRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"False");
-        String IncidentTypeToppleSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"False");
-        String IncidentTypeSlideSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"False");
-        String IncidentTypeSpreadSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"False");
-        String IncidentTypeFlowSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"False");
-        String IncidentTypeCompoundSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"False");
-        String IncidentTypeErosionSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"False");
-        String IncidentTypeSuperfacialSloughSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"False");
-        String IncidentTypeScouredToeSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"False");
-        String IncidentTypeWashedoutSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"False");
+        String IncidentTypeRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"false");
+        String IncidentTypeToppleSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"false");
+        String IncidentTypeSlideSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"false");
+        String IncidentTypeSpreadSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"false");
+        String IncidentTypeFlowSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"false");
+        String IncidentTypeCompoundSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"false");
+        String IncidentTypeErosionSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"false");
+        String IncidentTypeSuperfacialSloughSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"false");
+        String IncidentTypeScouredToeSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"false");
+        String IncidentTypeWashedoutSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"false");
 
         String distributionAns = mPreferences.getString(getString(R.string.IncidentTypeAndDistribRadiogroupDistribution),"");
         String highwayStatusAns = mPreferences.getString(getString(R.string.IncidentTypeAndDistribRadiogroupHighWayStatus),"");
 
-        String pavementCheckSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"False");
+        String pavementCheckSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"false");
         String pavementLengthSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentLength),"");
         String pavementVertDispSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentVertDisp),"");
         String pavementHoriDispSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentHoriDisp),"");
         String pavementDepthSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentDepth),"");
         String pavementSettlementSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentSettlement),"");
         String pavementBulgeSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentBulge),"");
-        String pavementCheckIndentedbyRockedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"False");
+        String pavementCheckIndentedbyRockedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"false");
         //MATERIAL
-        String MaterialRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialRock),"False");
-        String MaterialBeddingSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"False");
-        String MaterialJointsSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"False");
-        String MaterialFractureSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"False");
-        String MaterialSoilSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"False");
+        String MaterialRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialRock),"false");
+        String MaterialBeddingSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"false");
+        String MaterialJointsSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"false");
+        String MaterialFractureSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"false");
+        String MaterialSoilSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"false");
         String MaterialClaySaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialClay),"");
         String MaterialSiltSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSilt),"");
         String MaterialSandSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSand),"");
@@ -189,102 +189,102 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
 
 
         //Water Content
-        String WaterContentDrySaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"False");
-        String WaterContentMoistSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"False");
-        String WaterContentWetSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"False");
-        String WaterContentFlowingSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"False");
-        String WaterContentSeepSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"False");
-        String WaterContentSpringSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"False");
+        String WaterContentDrySaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"false");
+        String WaterContentMoistSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"false");
+        String WaterContentWetSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"false");
+        String WaterContentFlowingSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"false");
+        String WaterContentSeepSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"false");
+        String WaterContentSpringSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"false");
         //VEGETATION
         String VegetationTreesSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationTree),"");
         String VegetationBushesCoverSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationBushes),"");
         String VegetationGroundCoverSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationGroundCover),"");
         //WATER DRAINAGE
-        String WaterDrainageCloggedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"False");
-        String WaterDrainageCompromiseSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"False");
-        String WaterDrainageSurfaceSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"False");
-        String WaterDrainageTorrentSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"False");
+        String WaterDrainageCloggedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"false");
+        String WaterDrainageCompromiseSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"false");
+        String WaterDrainageSurfaceSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"false");
+        String WaterDrainageTorrentSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"false");
         //INCIDENT  TYPE
-        if(IncidentTypeRockSaved.equals("True")){
-            IncidentTypeRock.setChecked(true);
-        }else{
+        if(IncidentTypeRockSaved.equals("false")){
             IncidentTypeRock.setChecked(false);
-        }
-        if(IncidentTypeToppleSaved.equals("True")){
-            IncidentTypeTopple.setChecked(true);
         }else{
+            IncidentTypeRock.setChecked(true);
+        }
+        if(IncidentTypeToppleSaved.equals("false")){
             IncidentTypeTopple.setChecked(false);
-        }
-        if(IncidentTypeSlideSaved.equals("True")){
-            IncidentTypeSlide.setChecked(true);
         }else{
+            IncidentTypeTopple.setChecked(true);
+        }
+        if(IncidentTypeSlideSaved.equals("false")){
             IncidentTypeSlide.setChecked(false);
-        }
-        if(IncidentTypeSpreadSaved.equals("True")){
-            IncidentTypeSpread.setChecked(true);
         }else{
+            IncidentTypeSlide.setChecked(true);
+        }
+        if(IncidentTypeSpreadSaved.equals("false")){
             IncidentTypeSpread.setChecked(false);
-        }
-        if(IncidentTypeFlowSaved.equals("True")){
-            IncidentTypeFlow.setChecked(true);
         }else{
+            IncidentTypeSpread.setChecked(true);
+        }
+        if(IncidentTypeFlowSaved.equals("false")){
             IncidentTypeFlow.setChecked(false);
-        }
-        if(IncidentTypeCompoundSaved.equals("True")){
-            IncidentTypeCompound.setChecked(true);
         }else{
+            IncidentTypeFlow.setChecked(true);
+        }
+        if(IncidentTypeCompoundSaved.equals("false")){
             IncidentTypeCompound.setChecked(false);
-        }
-        if(IncidentTypeErosionSaved.equals("True")){
-            IncidentTypeErosion.setChecked(true);
         }else{
+            IncidentTypeCompound.setChecked(true);
+        }
+        if(IncidentTypeErosionSaved.equals("false")){
             IncidentTypeErosion.setChecked(false);
-        }
-        if(IncidentTypeSuperfacialSloughSaved.equals("True")){
-            IncidentTypeSuperfacialSlough.setChecked(true);
         }else{
+            IncidentTypeErosion.setChecked(true);
+        }
+        if(IncidentTypeSuperfacialSloughSaved.equals("false")){
             IncidentTypeSuperfacialSlough.setChecked(false);
-        }
-        if(IncidentTypeScouredToeSaved.equals("True")){
-            IncidentTypeScouredToe.setChecked(true);
         }else{
+            IncidentTypeSuperfacialSlough.setChecked(true);
+        }
+        if(IncidentTypeScouredToeSaved.equals("false")){
             IncidentTypeScouredToe.setChecked(false);
-        }
-        if(IncidentTypeWashedoutSaved.equals("True")){
-            IncidentTypeWashedout.setChecked(true);
         }else{
+            IncidentTypeScouredToe.setChecked(true);
+        }
+        if(IncidentTypeWashedoutSaved.equals("false")){
             IncidentTypeWashedout.setChecked(false);
+        }else{
+            IncidentTypeWashedout.setChecked(true);
         }
         if(distributionAns.equals("Advancing")){
-            advancing.setChecked(true);
+            advancing.setChecked(false);
         }else if(distributionAns.equals("Retrogressing")) {
-            retrogressing.setChecked(true);
+            retrogressing.setChecked(false);
         }else if(distributionAns.equals("Enlarging")){
-            enlarging.setChecked(true);
+            enlarging.setChecked(false);
         }else if(distributionAns.equals("Widening")){
-            widening.setChecked(true);
+            widening.setChecked(false);
         }else if(distributionAns.equals("Moving")){
-            moving.setChecked(true);
+            moving.setChecked(false);
         }else if(distributionAns.equals("Combined")){
-            combined.setChecked(true);
+            combined.setChecked(false);
         }
         if(highwayStatusAns.equals("Open")){
-            open.setChecked(true);
+            open.setChecked(false);
         }else if(highwayStatusAns.equals("Shoulder Closed")) {
-            shoulderclosed.setChecked(true);
+            shoulderclosed.setChecked(false);
         }else if(highwayStatusAns.equals("Lane Closed")){
-            laneclosed.setChecked(true);
+            laneclosed.setChecked(false);
         }else if(highwayStatusAns.equals("One-way Closed")){
-            onewayclosed.setChecked(true);
+            onewayclosed.setChecked(false);
         }else if(highwayStatusAns.equals("Two-way Closed")){
-            twowayclosed.setChecked(true);
+            twowayclosed.setChecked(false);
         }
         //Toast.makeText(this,distributionAns, Toast.LENGTH_LONG).show();
         //PAVEMENT
-        if(pavementCheckSaved.equals("True")){
-            paymentCrack.setChecked(true);
-        }else {
+        if(pavementCheckSaved.equals("false")){
             paymentCrack.setChecked(false);
+        }else {
+            paymentCrack.setChecked(true);
         }
         length.setText(pavementLengthSaved);
         verticalDisp.setText(pavementVertDispSaved);
@@ -292,166 +292,166 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         depthCrack.setText(pavementDepthSaved);
         settlement.setText(pavementSettlementSaved);
         bulge.setText(pavementBulgeSaved);
-        if(pavementCheckIndentedbyRockedSaved.equals("True")){
-            IndentedbyRocks.setChecked(true);
-        }else {
+        if(pavementCheckIndentedbyRockedSaved.equals("false")){
             IndentedbyRocks.setChecked(false);
+        }else {
+            IndentedbyRocks.setChecked(true);
         }
         //MATERIAL
-        if(MaterialRockSaved.equals("True")){
-            MaterialRock.setChecked(true);
-        }else {
+        if(MaterialRockSaved.equals("false")){
             MaterialRock.setChecked(false);
-        }
-        if(MaterialBeddingSaved.equals("True")){
-            MaterialBedding.setChecked(true);
         }else {
+            MaterialRock.setChecked(true);
+        }
+        if(MaterialBeddingSaved.equals("false")){
             MaterialBedding.setChecked(false);
-        }
-        if(MaterialJointsSaved.equals("True")){
-            MaterialJoints.setChecked(true);
         }else {
+            MaterialBedding.setChecked(true);
+        }
+        if(MaterialJointsSaved.equals("false")){
             MaterialJoints.setChecked(false);
-        }
-        if(MaterialFractureSaved.equals("True")){
-            MaterialFractures.setChecked(true);
         }else {
+            MaterialJoints.setChecked(true);
+        }
+        if(MaterialFractureSaved.equals("false")){
             MaterialFractures.setChecked(false);
-        }
-        if(MaterialSoilSaved.equals("True")){
-            MaterialSoil.setChecked(true);
         }else {
+            MaterialFractures.setChecked(true);
+        }
+        if(MaterialSoilSaved.equals("false")){
             MaterialSoil.setChecked(false);
+        }else {
+            MaterialSoil.setChecked(true);
         }
         MaterialClay.setText(MaterialClaySaved);
         MaterialSilt.setText(MaterialSiltSaved);
         MaterialSand.setText(MaterialSandSaved);
         MaterialGravel.setText(MaterialGravelSaved);
         //WATER CONTENT
-        if(WaterContentDrySaved.equals("True")){
-            WaterContentDry.setChecked(true);
-        }else{
+        if(WaterContentDrySaved.equals("false")){
             WaterContentDry.setChecked(false);
-        }
-        if(WaterContentMoistSaved.equals("True")){
-            WaterContentMoist.setChecked(true);
         }else{
+            WaterContentDry.setChecked(true);
+        }
+        if(WaterContentMoistSaved.equals("false")){
             WaterContentMoist.setChecked(false);
-        }
-        if(WaterContentWetSaved.equals("True")){
-            WaterContentWet.setChecked(true);
         }else{
+            WaterContentMoist.setChecked(true);
+        }
+        if(WaterContentWetSaved.equals("false")){
             WaterContentWet.setChecked(false);
-        }
-        if(WaterContentFlowingSaved.equals("True")){
-            WaterContentFlowing.setChecked(true);
         }else{
+            WaterContentWet.setChecked(true);
+        }
+        if(WaterContentFlowingSaved.equals("false")){
             WaterContentFlowing.setChecked(false);
-        }
-        if(WaterContentSeepSaved.equals("True")){
-            WaterContentSeep.setChecked(true);
         }else{
+            WaterContentFlowing.setChecked(true);
+        }
+        if(WaterContentSeepSaved.equals("false")){
             WaterContentSeep.setChecked(false);
-        }
-        if(WaterContentSpringSaved.equals("True")){
-            WaterContentSpring.setChecked(true);
         }else{
+            WaterContentSeep.setChecked(true);
+        }
+        if(WaterContentSpringSaved.equals("false")){
             WaterContentSpring.setChecked(false);
+        }else{
+            WaterContentSpring.setChecked(true);
         }
         //VEGATION
         VegetationSlopeTrees.setText(VegetationTreesSaved);
         VegetationSlopeTreesSlopGroundCover.setText(VegetationGroundCoverSaved);
         VegetationSlopeTreesSlopeBushes.setText(VegetationBushesCoverSaved);
         //WATER DRAINAGE
-        if(WaterDrainageCloggedSaved.equals("True")){
-            WaterDrainageCloggedInlet.setChecked(true);
-        }else{
+        if(WaterDrainageCloggedSaved.equals("false")){
             WaterDrainageCloggedInlet.setChecked(false);
-        }
-        if(WaterDrainageCompromiseSaved.equals("True")){
-            WaterDrainageCompromisedDrains.setChecked(true);
         }else{
+            WaterDrainageCloggedInlet.setChecked(true);
+        }
+        if(WaterDrainageCompromiseSaved.equals("false")){
             WaterDrainageCompromisedDrains.setChecked(false);
-        }
-        if(WaterDrainageSurfaceSaved.equals("True")){
-            WaterDrainageSurfaceDrain.setChecked(true);
         }else{
+            WaterDrainageCompromisedDrains.setChecked(true);
+        }
+        if(WaterDrainageSurfaceSaved.equals("false")){
             WaterDrainageSurfaceDrain.setChecked(false);
-        }
-        if(WaterDrainageTorrentSaved.equals("True")){
-            WaterDrainageTorrent.setChecked(true);
         }else{
+            WaterDrainageSurfaceDrain.setChecked(true);
+        }
+        if(WaterDrainageTorrentSaved.equals("false")){
             WaterDrainageTorrent.setChecked(false);
+        }else{
+            WaterDrainageTorrent.setChecked(true);
         }
 
     }
     private void pushtoSavePref(){
         //IncidentType
         if(IncidentTypeRock.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"(Rock) Fall");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"false");
         }
         if(IncidentTypeTopple.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"Topple");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"false");
         }
         if(IncidentTypeSlide.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"Slide");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"false");
         }
         if(IncidentTypeSpread.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"Spread");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"false");
         }
         if(IncidentTypeFlow.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"Flow");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"false");
         }
         if(IncidentTypeCompound.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"Compound");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"false");
         }
         if(IncidentTypeErosion.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"Erosion");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"false");
         }
         if(IncidentTypeSuperfacialSlough.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"Surfacial Sloughing");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"false");
         }
         if(IncidentTypeScouredToe.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"Scoured Toe");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"false");
         }
         if(IncidentTypeWashedout.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"Washedout");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"false");
         }
         //DISTRIBUTIONS RADIO GROUP
         int distributionbuttonID = distribution.getCheckedRadioButtonId();
         String distributionAns = "";
         if (distributionbuttonID == -1){
-            distributionAns = "False";
+            distributionAns = "false";
         }
         else{
             RadioButton distributionButton = (RadioButton) findViewById(distributionbuttonID);
@@ -461,7 +461,7 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         int highwaystatusbuttoncheckID = highwayStatus.getCheckedRadioButtonId();
         String highwayStatusAns = "";
         if (highwaystatusbuttoncheckID == -1){
-            highwayStatusAns = "False";
+            highwayStatusAns = "false";
         }
         else{
             RadioButton highwaystatusChcked = (RadioButton) findViewById(highwaystatusbuttoncheckID);
@@ -472,10 +472,10 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
 
         //PAVEMENT
         if(paymentCrack.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"Pavement/Ground Cracks");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"false");
         }
         mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentLength),length.getText().toString());
         mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentVertDisp),verticalDisp.getText().toString());
@@ -484,42 +484,42 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentSettlement),settlement.getText().toString());
         mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentBulge),bulge.getText().toString());
         if(IndentedbyRocks.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"Indented By Rocks");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"false");
         }
 
         //MATERIAL
         if(MaterialRock.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"Rock");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"false");
         }
         if(MaterialBedding.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"Bedding");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"false");
         }
         if(MaterialJoints.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"Joints");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"false");
         }
         if(MaterialFractures.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"Fractures");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"false");
         }
         if(MaterialSoil.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"Soil");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"false");
         }
         mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialClay),MaterialClay.getText().toString());
         mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialSilt),MaterialSilt.getText().toString());
@@ -527,40 +527,40 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         mEditor.putString(getString(R.string.IncidentTypeAndDistribMaterialGravel),MaterialGravel.getText().toString());
         //Water Content
         if(WaterContentDry.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"Dry");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"false");
         }
         if(WaterContentMoist.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"Moist");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"false");
         }
         if(WaterContentWet.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"Wet");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"false");
         }
         if(WaterContentFlowing.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"Flowing");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"false");
         }
         if(WaterContentSeep.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"Seep");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"false");
         }
         if(WaterContentSpring.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"Spring");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"false");
         }
         //VEGATION
         mEditor.putString(getString(R.string.IncidentTypeAndDistribVegetationTree),VegetationSlopeTrees.getText().toString());
@@ -568,28 +568,28 @@ public class IncidentTypeAndDistributionActivity extends AppCompatActivity {
         mEditor.putString(getString(R.string.IncidentTypeAndDistribVegetationGroundCover),VegetationSlopeTreesSlopGroundCover.getText().toString());
         //WATER DRAINAGE
         if(WaterDrainageCloggedInlet.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"Clogged Inlet");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"false");
         }
         if(WaterDrainageCompromisedDrains.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"Compromise Drains");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"false");
         }
         if(WaterDrainageSurfaceDrain.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"Surface Runoff");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"false");
         }
         if(WaterDrainageTorrent.isChecked()){
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"True");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"Torrent, Surge, Flood");
         }
         else{
-            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"False");
+            mEditor.putString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"false");
         }
         mEditor.commit();
     }

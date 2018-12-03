@@ -57,6 +57,7 @@ app.post('/submitIncidentReport/',(req,res)=>{
 		connection.on('error',function(err){
 			console.log('[MYSQL ERROR]',err);
 		});
+		res.end('Successful Incident Report');
 		console.log(result[0].ProjectID);
 		GProjectID = result[0].ProjectID;
 	});
@@ -64,6 +65,7 @@ app.post('/submitIncidentReport/',(req,res)=>{
 app.post('/submitMaterial/',(req,res,next)=>{
 	var post_data = req.body;
 	console.log(post_data);
+	var flag = 0;
 	var ProjectID = GProjectID;
 	var TypeOfMaterial = post_data.TypeOfMaterial;
 	var Bedding = post_data.Bedding;
@@ -80,9 +82,10 @@ app.post('/submitMaterial/',(req,res,next)=>{
 			res.json('SQL error: ',err);
 		});
 		res.end('Material Table Registered');
-		console.log(ProjectID);
+		console.log(ProjectID + 'Material Table');
 		console.log('Material Table Registered Successful!!');
 	});
+	flag = 1;
 })
 app.post('/submitFollowUpActions/',(req,res,next)=>{
 	var post_data = req.body;
@@ -108,14 +111,14 @@ app.post('/submitImmediateActions/',(req,res,next)=>{
 	var ImmediateActions = post_data.ImmediateActions;
 	var OpenLines = post_data.OpenLines;
 	var sql = 'INSERT INTO ImmediateActions (ProjectID,ImmediateActions,OpenLines) VALUES (?,?,?);'
-	connection.query(sql,[ProjectID,FollowUpActions,OpenLines],function(err,result,fields){
+	connection.query(sql,[ProjectID,ImmediateActions,OpenLines],function(err,result,fields){
 		connection.on('error',function(err){
 			console.log('[MySQL Error]',err);
 			res.json('SQL error: ',err);
 		});
-		res.end('FollowUpActions Table Registered');
+		res.end('ImmediateActions Table Registered');
 		console.log(ProjectID);
-		console.log('FollowUpActions Table Registered Successful!!');
+		console.log('ImmediateActions Table Registered Successful!!');
 	});
 })
 app.post('/submitIncidentType/',(req,res,next)=>{

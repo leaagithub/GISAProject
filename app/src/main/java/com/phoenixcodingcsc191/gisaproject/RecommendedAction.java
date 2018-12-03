@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import com.phoenixcodingcsc191.gisaproject.Retrofit.INODEJS;
 import com.phoenixcodingcsc191.gisaproject.Retrofit.RetrofitClient;
@@ -304,187 +305,187 @@ public class RecommendedAction extends AppCompatActivity {
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayTraffic),"Open Highway Traffic");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayTraffic),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayTraffic),"false");
         }
         if(checkBoxFollowUpActionsOpenHighwayTraffic.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayTraffic),"Open Highway Traffic");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayTraffic),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayTraffic),"false");
         }
         if(checkBoxImmediateActionsOpenHighwayShoulder.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayShoulder),"Open Highway Shoulder");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayShoulder),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsOpenHighwayShoulder),"false");
         }
         if(checkBoxFollowUpActionsOpenHighwayShoulder.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayShoulder),"Open Highway Shoulder");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayShoulder),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsOpenHighwayShoulder),"false");
         }
         if(checkBoxImmediateActionsCloseHighway.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCloseHighway),"Close Highway");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCloseHighway),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCloseHighway),"false");
         }
         if(checkBoxImmediateActionsRemovedLandsideDebris.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemovedLandsideDebris),"Remove Landslide Debris");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemovedLandsideDebris),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemovedLandsideDebris),"false");
         }
         if(checkBoxImmediateActionsPlaceKRail.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceKRail),"Place K-Rail or Fence");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceKRail),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceKRail),"false");
         }
         if(checkBoxImmediateActionsCoverSlope.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCoverSlope),"Cover Slope with Plastic");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCoverSlope),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsCoverSlope),"false");
         }
         if(checkBoxImmediateActionsDivertSurface.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDivertSurface),"Divert Surface Water Runoff");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDivertSurface),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDivertSurface),"false");
         }
         if(checkBoxImmediateActionsRemoveCulvert.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemoveCulvert),"Remove Culvert Blockage");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemoveCulvert),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRemoveCulvert),"false");
         }
         if(checkBoxImmediateActionsDewaterPump.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterPump),"Dewater with Pump, Trench, etc");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterPump),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterPump),"false");
         }
         if(checkBoxImmediateActionsDewaterHorizontalDrains.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterHorizontalDrains),"Dewater with Horizontal Drains");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterHorizontalDrains),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsDewaterHorizontalDrains),"false");
         }
         if(checkBoxFollowUpActionsDewaterHorizontalDrains.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsDewaterHorizontalDrains),"Dewater with Horizontal Drains");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsDewaterHorizontalDrains),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsDewaterHorizontalDrains),"false");
         }
         if(checkBoxImmediateActionsConstructTempShoring.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsConstructTempShoring),"Construct Temporary Shoring");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsConstructTempShoring),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsConstructTempShoring),"false");
         }
         if(checkBoxFollowUpActionsConstructTempShoring.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsConstructTempShoring),"Construct Temporary Shoring");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsConstructTempShoring),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsConstructTempShoring),"false");
         }
         if(checkBoxImmediateActionsButtressToeOfLandslide.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsButtressToeOfLandslide),"Buttress Toe of Landslide");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsButtressToeOfLandslide),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsButtressToeOfLandslide),"false");
         }
         if(checkBoxFollowUpActionsButtressToeOfLandslide.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsButtressToeOfLandslide),"Buttress Toe of Landslide");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsButtressToeOfLandslide),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsButtressToeOfLandslide),"false");
         }
         if(checkBoxImmediateActionsPlaceRockSlopeProtect.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceRockSlopeProtect),"Place Rock Slope Protection");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceRockSlopeProtect),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsPlaceRockSlopeProtect),"false");
         }
         if(checkBoxFollowUpActionsPlaceRockSlopeProtect.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPlaceRockSlopeProtect),"Place Rock Slope Protection");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPlaceRockSlopeProtect),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPlaceRockSlopeProtect),"false");
         }
         if(checkBoxImmediateActionsRoutineVisualMonitor.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRoutineVisualMonitor),"Routine Visual Monitor");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRoutineVisualMonitor),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsRoutineVisualMonitor),"false");
         }
         if(checkBoxFollowUpActionsRoutineVisualMonitor.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRoutineVisualMonitor),"Routine Visual Monitor");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRoutineVisualMonitor),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRoutineVisualMonitor),"false");
         }
         if(checkBoxImmediateActionsReconstructSlopeOG.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeOG),"Reconstruct Slope to Original Condition");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeOG),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeOG),"false");
         }
         if(checkBoxFollowUpActionsReconstructSlopeOG.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeOG),"Reconstruct Slope to Original Condition");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeOG),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeOG),"false");
         }
         if(checkBoxImmediateActionsReconstructSlopeGeo.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeGeo),"Reconstruct Slope with Geosynthetics");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeGeo),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxImmediateActionsReconstructSlopeGeo),"false");
         }
         if(checkBoxFollowUpActionsReconstructSlopeGeo.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeGeo),"Reconstruct Slope with Geosynthetics");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeGeo),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsReconstructSlopeGeo),"false");
         }
         if(checkBoxFollowUpActionsInstallErosion.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsInstallErosion),"Install Erosion Control - by Dist. Landscape");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsInstallErosion),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsInstallErosion),"false");
         }
         if(checkBoxFollowUpActionsRepairPipe.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRepairPipe),"Repair Culvert/Drainage Pipe");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRepairPipe),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsRepairPipe),"false");
         }
         if(checkBoxFollowUpActionsSurveyTheSite.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsSurveyTheSite),"Survey the Site- by Dist. Survey");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsSurveyTheSite),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsSurveyTheSite),"false");
         }
         if(checkBoxFollowUpActionsPerformGeologicalMapping.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformGeologicalMapping),"Perform Geological Mapping");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformGeologicalMapping),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformGeologicalMapping),"false");
         }
         if(checkBoxFollowUpActionsPerformSubsurfaceExploration.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformSubsurfaceExploration),"Perform Subsurface Exploration");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformSubsurfaceExploration),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformSubsurfaceExploration),"false");
         }
         if(checkBoxFollowUpActionsPerformDetailedDesign.isChecked()){
             mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformDetailedDesign),"Perform Detailed Design & Produce Plans");
         }
         else{
-            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformDetailedDesign),"False");
+            mEditor.putString(getString(R.string.RecommendedActioncheckBoxFollowUpActionsPerformDetailedDesign),"false");
         }
 
         mEditor.commit();
@@ -524,17 +525,21 @@ public class RecommendedAction extends AppCompatActivity {
         });
     }
     private void finalSubmit(){
-
         submitReport();
-        submitMaterial();
-        submitFollowUpActionsBackEnd();
-        submitIncidentType();
-        submitMeasurements();
-        submitPavement_Ground_Status();
-        submitVegetationOnSlope();
-        submitWater_Drainage();
+
+    }
+    public void showResponse(String response){
+        Toast.makeText(this, response, Toast.LENGTH_SHORT).show();
     }
     public void submitReport() {
+        String WaterContentDrySaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentDry),"false");
+        String WaterContentMoistSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentMoist),"false");
+        String WaterContentWetSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentWet),"false");
+        String WaterContentFlowingSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentFlowing),"false");
+        String WaterContentSeepSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSeeping),"false");
+        String WaterContentSpringSaved =  mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterContentSpring),"false");
+
+        String WaterContentAllSaved = WaterContentDrySaved + ' ' + WaterContentMoistSaved + ' ' + WaterContentWetSaved + ' ' + WaterContentFlowingSaved + ' ' + WaterContentSeepSaved + ' '+ WaterContentSpringSaved;
         compositeDisposable.add(myAPI.submitIncidentReport(
                 mPreferences.getString(getString(R.string.SiteInfoDateIncidentReport), ""),
                 mPreferences.getString(getString(R.string.SiteInfoDate), ""),
@@ -548,7 +553,7 @@ public class RecommendedAction extends AppCompatActivity {
                 mPreferences.getString(getString(R.string.IncidentTypeAndDistribRadiogroupDistribution), ""),
                 mPreferences.getString(getString(R.string.IncidentTypeAndDistribRadiogroupHighWayStatus), ""),
                 "",
-                "",
+                WaterContentAllSaved,
                 "",
                 "",
                 "",
@@ -558,17 +563,54 @@ public class RecommendedAction extends AppCompatActivity {
                 .subscribe(new Consumer<String>() {
                     @Override
                     public void accept(String s) throws Exception {
+                        if(s.equals("Incident Report Registered")){
+                            submitMaterial();
+                            submitFollowUpActionsBackEnd();
+                            submitIncidentTypeBackEnd();
+                            submitMeasurements();
+                            submitPavement_Ground_Status();
+                            submitVegetationOnSlope();
+                            submitWater_DrainageBackEnd();
+                            showResponse("Successful");
+                        }
+                        else{
+                            showResponse(s);
+                        }
 
                     }
                 })
         );
     }
     public void submitMaterial(){
+        String MaterialRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialRock),"false");
+        String MaterialBeddingSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialBedding),"false");
+        String MaterialJointsSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialJoints),"false");
+        String MaterialFractureSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialFractures),"false");
+        String MaterialSoilSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSoil),"false");
+        String MaterialRockOrSoil = MaterialRockSaved +' ' + MaterialSoilSaved;
+        if (MaterialBeddingSaved.equals("false")){
+            MaterialBeddingSaved = "0";
+        }
+        else{
+            MaterialBeddingSaved = "1";
+        }
+        if (MaterialJointsSaved.equals("false")){
+            MaterialJointsSaved = "0";
+        }
+        else{
+            MaterialJointsSaved = "1";
+        }
+        if (MaterialFractureSaved.equals("false")){
+            MaterialFractureSaved = "0";
+        }
+        else{
+            MaterialFractureSaved = "1";
+        }
         compositeDisposable.add(myAPI.submitMaterial(
-                    "",
-                    "",
-                    "",
-                    "",
+                MaterialRockOrSoil,
+                MaterialBeddingSaved,
+                MaterialJointsSaved,
+                MaterialFractureSaved,
                     mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialClay), ""),
                     mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSilt), ""),
                     mPreferences.getString(getString(R.string.IncidentTypeAndDistribMaterialSand), ""),
@@ -741,9 +783,9 @@ public class RecommendedAction extends AppCompatActivity {
             submitFollowUpActions(checkBoxFollowUpActionsPerformDetailedDesignSaved);
         }
     }
-    public void submitFollowUpActions(String s){
+    public void submitFollowUpActions(String a){
         compositeDisposable.add(myAPI.submitFollowUpActions(
-                s,
+                a,
                 "")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -755,9 +797,9 @@ public class RecommendedAction extends AppCompatActivity {
                 })
         );
     }
-    public void submitImmediateActions(String s){
+    public void submitImmediateActions(String a){
         compositeDisposable.add(myAPI.submitImmediateActions(
-                s,
+                a,
                 "")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -769,8 +811,8 @@ public class RecommendedAction extends AppCompatActivity {
                 })
         );
     }
-    public void submitIncidentType(){
-        compositeDisposable.add(myAPI.submitIncidentType("")
+    public void submitIncidentType(String a){
+        compositeDisposable.add(myAPI.submitIncidentType(a)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
@@ -780,17 +822,79 @@ public class RecommendedAction extends AppCompatActivity {
                     }
                 })
         );
+    }
+    public void submitIncidentTypeBackEnd(){
+        String IncidentTypeRockSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeRock),"false");
+        String IncidentTypeToppleSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeTopple),"false");
+        String IncidentTypeSlideSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSlide),"false");
+        String IncidentTypeSpreadSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSpread),"false");
+        String IncidentTypeFlowSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeFlow),"false");
+        String IncidentTypeCompoundSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeCompound),"false");
+        String IncidentTypeErosionSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeErosion),"false");
+        String IncidentTypeSuperfacialSloughSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeSuperfacialSlough),"false");
+        String IncidentTypeScouredToeSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentTypeScouredToe),"false");
+        String IncidentTypeWashedoutSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribCheckBoxIncidentWashedout),"false");
+
+        if(IncidentTypeRockSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeRockSaved);
+        }
+        if(IncidentTypeToppleSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeToppleSaved);
+        }
+        if(IncidentTypeSlideSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeSlideSaved);
+        }
+        if(IncidentTypeSpreadSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeSpreadSaved);
+        }
+        if(IncidentTypeFlowSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeFlowSaved);
+        }
+        if(IncidentTypeCompoundSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeCompoundSaved);
+        }
+        if(IncidentTypeErosionSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeErosionSaved);
+        }
+        if(IncidentTypeSuperfacialSloughSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeSuperfacialSloughSaved);
+        }
+        if(IncidentTypeScouredToeSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeScouredToeSaved);
+        }
+        if(IncidentTypeWashedoutSaved.equals("false")){
+        }else{
+            submitIncidentType(IncidentTypeWashedoutSaved);
+        }
+
     }
     public void submitMeasurements(){
+        String MeasurementOriginalSlopeSaved = mPreferences.getString(getString(R.string.MeasurementOriginalSlope),"");
+        String MeasurementSlopeHeightSaved = mPreferences.getString(getString(R.string.MeasurementSlopeHeight),"");
+        String MeasurementLandslideSlopeSaved = mPreferences.getString(getString(R.string.MeasurementLandslideSlope),"");
+        String MeasurementWidthOfRoadwayEncroachedSaved = mPreferences.getString(getString(R.string.MeasurementWidthOfRoadwayEncroached),"");
+        String MeasurementLengthOfRoadwayEncroachedSaved = mPreferences.getString(getString(R.string.MeasurementLengthOfRoadwayEncroached),"");
+        String MeasurementMainscrapHeightSaved = mPreferences.getString(getString(R.string.MeasurementMainscrapHeight),"");
+        String MeasurementLandslideLengthSaved = mPreferences.getString(getString(R.string.MeasurementLandslideLength),"");
+        String MeasurementLandslideWidthSaved = mPreferences.getString(getString(R.string.MeasurementLandslideWidth),"");
         compositeDisposable.add(myAPI.submitMeasurements(
-                "",
-                "",
-                 "",
-                "",
-                "",
-                "",
-                "",
-                "")
+                MeasurementSlopeHeightSaved,
+                MeasurementOriginalSlopeSaved,
+                MeasurementLandslideWidthSaved,
+                MeasurementLandslideLengthSaved,
+                MeasurementMainscrapHeightSaved,
+                MeasurementLandslideSlopeSaved,
+                MeasurementLengthOfRoadwayEncroachedSaved,
+                MeasurementWidthOfRoadwayEncroachedSaved)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
@@ -802,15 +906,35 @@ public class RecommendedAction extends AppCompatActivity {
         );
     }
     public void submitPavement_Ground_Status(){
+        String pavementCheckSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentCheckbox),"false");
+        String pavementLengthSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentLength),"");
+        String pavementVertDispSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentVertDisp),"");
+        String pavementHoriDispSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentHoriDisp),"");
+        String pavementDepthSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentDepth),"");
+        String pavementSettlementSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentSettlement),"");
+        String pavementBulgeSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentBulge),"");
+        String pavementCheckIndentedbyRockedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribPaymentRockIndentCheckbox),"false");
+        if (pavementCheckSaved.equals("false")){
+            pavementCheckSaved = "0";
+        }
+        else{
+            pavementCheckSaved = "1";
+        }
+        if (pavementCheckIndentedbyRockedSaved.equals("false")){
+            pavementCheckIndentedbyRockedSaved = "0";
+        }
+        else{
+            pavementCheckIndentedbyRockedSaved = "1";
+        }
         compositeDisposable.add(myAPI.submitPavement_Ground_Status(
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "")
+                pavementCheckSaved,
+                pavementLengthSaved,
+                pavementHoriDispSaved,
+                pavementVertDispSaved,
+                pavementDepthSaved,
+                pavementSettlementSaved,
+                pavementBulgeSaved,
+                pavementCheckIndentedbyRockedSaved)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
@@ -822,10 +946,13 @@ public class RecommendedAction extends AppCompatActivity {
         );
     }
     public void submitVegetationOnSlope(){
+        String VegetationTreesSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationTree),"");
+        String VegetationBushesCoverSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationBushes),"");
+        String VegetationGroundCoverSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribVegetationGroundCover),"");
         compositeDisposable.add(myAPI.submitVegetationOnSlope(
-                "",
-                "",
-                "")
+                VegetationTreesSaved,
+                VegetationBushesCoverSaved,
+                VegetationGroundCoverSaved)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
@@ -836,9 +963,9 @@ public class RecommendedAction extends AppCompatActivity {
                 })
         );
     }
-    public void submitWater_Drainage(){
+    public void submitWater_Drainage(String a){
         compositeDisposable.add(myAPI.submitWater_Drainage(
-                "")
+                a)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<String>() {
@@ -848,5 +975,28 @@ public class RecommendedAction extends AppCompatActivity {
                     }
                 })
         );
+    }
+    public void submitWater_DrainageBackEnd(){
+        String WaterDrainageCloggedSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainClogged),"false");
+        String WaterDrainageCompromiseSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainCompromised),"false");
+        String WaterDrainageSurfaceSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainSurface),"false");
+        String WaterDrainageTorrentSaved = mPreferences.getString(getString(R.string.IncidentTypeAndDistribWaterDrainTorrent),"false");
+
+        if(WaterDrainageCloggedSaved.equals("false")){
+        }else{
+            submitWater_Drainage(WaterDrainageCloggedSaved);
+        }
+        if(WaterDrainageCompromiseSaved.equals("false")){
+        }else{
+            submitWater_Drainage(WaterDrainageCompromiseSaved);
+        }
+        if(WaterDrainageSurfaceSaved.equals("false")){
+        }else{
+            submitWater_Drainage(WaterDrainageSurfaceSaved);
+        }
+        if(WaterDrainageTorrentSaved.equals("false")){
+        }else{
+            submitWater_Drainage(WaterDrainageTorrentSaved);
+        }
     }
 }
